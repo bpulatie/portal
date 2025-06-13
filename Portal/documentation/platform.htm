@@ -1,0 +1,830 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Platform Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/htm; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            
+    <!-- Bootstrap -->
+    <!--link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>-->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="data:text/css;charset=utf-8," data-href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+    <link href="documentation.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="bs-docs-header" id="content" tabindex="-1">
+        <div class="container">
+            <h1>SPA Controls</h1>
+            <p>My platform controls, a dataset, a grid and other form based controls</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- SPA Dataset -->
+        <div class="bs-docs-section">
+            <h1 id="page-header" class="page-header">spaDataset</h1>
+
+            <p>
+                A JSON dataset object. 
+            </p>
+            <p>
+            TIP: If using datasets for Lookups and Selects use the onload method to chain loads to ensure data is loaded 
+            before the main dataset is loaded.
+            </p>
+        
+            <div class="bs-example" data-example-id="simple-page-header">
+                <div class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nt">&lt;script&gt;</span>
+                                <span class="nx">dsBrowse = new spaDataset({</span>
+                                    <span class="s1">'id'</span><span class="nx">: 'dsBrowse',</span>
+                                    <span class="s1">'pk'</span><span class="nx">: 'account_id',</span>
+                                    <span class="s1">'webservice'</span><span class="nx">: '../services/account_Services.asmx/GetAll',</span>
+                                    <span class="s1">'rows'</span><span class="nx">: 30</span>
+                                <span class="p">});</span>
+                            <span class="nt">&lt;/script&gt;</span></code></pre></div>
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+
+        <h4 id="tooltips-options">Options</h4>
+        <p>Options are passed via JavaScript.</p>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>Name given to the dataset</td>
+                    </tr>
+                    <tr>
+                        <td>table</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>Database table, required to maintain updates and post back to the server</td>
+                    </tr>
+                    <tr>
+                        <td>pk</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>Database Column that represents the primary key, required to maintain updates and post back to the server</td>
+                    </tr>
+                    <tr>
+                        <td>webservice</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>.asmx webservice that will return the result set</td>
+                    </tr>
+                    <tr>
+                        <td>params</td>
+                        <td>json string</td>
+                        <td>null</td>
+                        <td>A fixed set of parameters used to retrieve data</td>
+                    </tr>
+                    <tr>
+                        <td>filter</td>
+                        <td>json object</td>
+                        <td>filter[]</td>
+                        <td>Dynamic filters to restrict the retrieve of data based of serach criteria</td>
+                    </tr>
+                    <tr>
+                        <td>rows</td>
+                        <td>int</td>
+                        <td>-1</td>
+                        <td>Number of rows to use when paging -1 = no paging</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+
+        <h4 id="H19">Events</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Parameters</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>onload</td>
+                        <td>null</td>
+                        <td>Fires when the dataset is returned</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+
+        <h4 id="H20">Methods</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Parameters</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Page</td>
+                        <td>(pageNo)</td>
+                        <td>Get the specified page of data</td>
+                    </tr>
+                    <tr>
+                        <td>NextPage</td>
+                        <td>()</td>
+                        <td>Get the next page of data</td>
+                    </tr>
+                    <tr>
+                        <td>PreviousPage</td>
+                        <td>()</td>
+                        <td>Get the previous page of data</td>
+                    </tr>
+                    <tr>
+                        <td>RowNo</td>
+                        <td>()</td>
+                        <td>Returns the index of the current row</td>
+                    </tr>
+                    <tr>
+                        <td>RowCount</td>
+                        <td>()</td>
+                        <td>Returns the number of rows in the dataset</td>
+                    </tr>
+                    <tr>
+                        <td>GetRow</td>
+                        <td>(rowNo)</td>
+                        <td>Sets the current row to rowNo and returns the row as a JSON object</td>
+                    </tr>
+                    <tr>
+                        <td>GetCurrentRow</td>
+                        <td>()</td>
+                        <td>Returns the current row as a JSON object</td>
+                    </tr>
+                    <tr>
+                        <td>MoveFirst</td>
+                        <td>()</td>
+                        <td>Sets current row to first index (0)</td>
+                    </tr>
+                    <tr>
+                        <td>MoveNext</td>
+                        <td>()</td>
+                        <td>Sets current row to current row + 1</td>
+                    </tr>
+                    <tr>
+                        <td>MoveTo</td>
+                        <td>(rowNo)</td>
+                        <td>Sets current row to the specified rowNo</td>
+                    </tr>
+                    <tr>
+                        <td>Reload</td>
+                        <td>(filters)</td>
+                        <td>reload the current page of data - using the given filter</td>
+                    </tr>
+                    <tr>
+                        <td>AddRow</td>
+                        <td>()</td>
+                        <td>Add a new row to the dataset - not committed until Save()</td>
+                    </tr>
+                    <tr>
+                        <td>EditColumn</td>
+                        <td>(column, value)</td>
+                        <td>Edit the column in the current row - not committed until Save()</td>
+                    </tr>
+                    <tr>
+                        <td>DeleteRow</td>
+                        <td>()</td>
+                        <td>Delete the current row - not committed until Save()</td>
+                    </tr>
+                    <tr>
+                        <td>Save</td>
+                        <td>()</td>
+                        <td>Commit any changes to the server</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+
+        <!-- SPAGrid -->
+        <div class="bs-docs-section">
+            <h1 id="H1" class="page-header">spaGrid</h1>
+
+            <p>
+                A Paged Grid control with search page 
+            </p>
+        
+            <div class="bs-example" data-example-id="simple-page-header">
+                <pre>
+                    <code class="language-html" data-lang="html">
+                        <span class="nt">&lt;div </span><span class="s1">id=</span>"myGrid" <span class="s1">spaGrid dataset</span><span class="nt">="dsBrowse"&gt;&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+
+            <div class="bs-example" data-example-id="simple-page-header">
+                <div class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nt">&lt;script&gt;</span>
+                                <span class="nx">$('#myGrid').spaGrid({</span>
+                                    <span class="s1">'title'</span><span class="nx">: "Account Browse",</span>
+                                    <span class="s1">'columns'</span><span class="nx">: myColumns,</span>
+                                    <span class="s1">'filters'</span><span class="nx">: myFilters,</span>
+                                    <span class="s1">'rowID'</span><span class="nx">: 'account_id',</span>
+                                    <span class="s1">'height'</span><span class="nx">: 430,</span>
+                                    <span class="s1">'newBtn'</span><span class="nx">: 'Add New Account',</span>
+                                    <span class="s1">'newLocation'</span><span class="nx">: 'detail.htm'</span>
+                                <span class="p">});</span>
+                            <span class="nt">&lt;/script&gt;</span></code></pre></div>
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+
+        <h4 id="H2">Options</h4>
+        <p>Options are passed via JavaScript.</p>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>title</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>Title displayed in the header of the grid</td>
+                    </tr>
+                    <tr>
+                        <td>columns</td>
+                        <td>array</td>
+                        <td>[]</td>
+                        <td>A list of columns describing the layout of the grid</td>
+                    </tr>
+                    <tr>
+                        <td>filters</td>
+                        <td>array</td>
+                        <td>[]</td>
+                        <td>Describes the serach panel and fields that can be searched</td>
+                    </tr>
+                    <tr>
+                        <td>rowID</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>The column that represents the id if the detail is drilled into i.e. the primary key of the data</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>int</td>
+                        <td>null</td>
+                        <td>Height in px's of the grid</td>
+                    </tr>
+                    <tr>
+                        <td>newBtn</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Determines whether to put an Add New button on the grid</td>
+                    </tr>
+                    <tr>
+                        <td>newLocation</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>The page to navigate to if the add new button is clicked</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+
+        <h4 id="H21">Events</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Parameters</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>onload</td>
+                        <td>null</td>
+                        <td>Fires when the grid is ready</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+
+        <!-- SPAColumns -->
+        <div class="bs-docs-section">
+            <h1 id="H3" class="page-header">spaColumns</h1>
+
+            <p>
+                Defines the columns on a spaGrid 
+            </p>
+        
+            <div class="bs-example" data-example-id="simple-page-header">
+                <pre>
+                    <code class="language-html" data-lang="html">
+                        <span class="nt">&lt;div </span><span class="s1">id=</span>"myGrid" <span class="s1">spaGrid dataset</span><span class="nt">="dsBrowse"&gt;&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+
+            <div class="bs-example" data-example-id="simple-page-header">
+                <div class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nt">&lt;script&gt;</span>
+                                <span class="nx">var myColumns = new Array([</span><span class="s1">'Account Name'</span>, <span class="s1">'50%'</span>, <span class="s1">'account_name'</span>, <span class="s1">''</span>, <span class="s1">''</span>, <span class="s1">'key'</span>],
+                                                          <span class="nx">[</span><span class="s1">'Account No'</span>, <span class="s1">'50%'</span>, <span class="s1">'account_no'</span>, <span class="s1">''</span>, <span class="s1">''</span>, <span class="s1">''</span>]);
+                            <span class="nt">&lt;/script&gt;</span>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+	
+        <h4 id="H4">Options</h4>
+        <p>Options are passed via JavaScript.</p>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Header</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>Column Header</td>
+                    </tr>
+                    <tr>
+                        <td>Width</td>
+                        <td>%</td>
+                        <td>null</td>
+                        <td>Column Width expressed as a percentage</td>
+                    </tr>
+                    <tr>
+                        <td>Column</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>Column name withing the dataset</td>
+                    </tr>
+                    <tr>
+                        <td>dataType</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>numeric - right align, datetime - date and time, date - date only or remove - Adds a red X button for deletes</td>
+                    </tr>
+                    <tr>
+                        <td>dataFormat</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>numeric:money</td>
+                    </tr>
+                    <tr>
+                        <td>class</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>Add a class to a column to trap on click events</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+
+        <!-- SPAFilters -->
+        <div class="bs-docs-section">
+            <h1 id="H5" class="page-header">spaFilters</h1>
+
+            <p>
+                Defines the filter columns to be used on the search page of a spaGrid 
+            </p>
+        
+            <div class="bs-example" data-example-id="simple-page-header">
+                <pre>
+                    <code class="language-html" data-lang="html">
+                        <span class="nt">&lt;div </span><span class="s1">id=</span>"myGrid" <span class="s1">spaGrid dataset</span><span class="nt">="dsBrowse"&gt;&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+
+            <div class="bs-example" data-example-id="simple-page-header">
+                <div class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+                            <span class="nt">&lt;script&gt;</span>
+                                <span class="nx">var myFilters = new Array([</span><span class="s1">'myLastName'</span>, <span class="s1">'account_name'</span>, <span class="s1">'Account Name'</span>, <span class="s1">'contains'</span>],
+                                                          <span class="nx">[</span><span class="s1">'myAccNo'</span>, <span class="s1">'account_no'</span>, <span class="s1">'Account No'</span>, <span class="s1">'contains'</span>]);
+                            <span class="nt">&lt;/script&gt;</span>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <h4 id="H6">Options</h4>
+        <p>Options are passed via JavaScript.</p>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>Name used as the HTML element id</td>
+                    </tr>
+                    <tr>
+                        <td>Column</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>Database Column name to be searched</td>
+                    </tr>
+                    <tr>
+                        <td>Label</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>Label shown against the column on the Search panel</td>
+                    </tr>
+                    <tr>
+                        <td>Condition</td>
+                        <td>string</td>
+                        <td>null</td>
+                        <td>How to apply the filter (contains, startswith, endswith, or =,>,< or <>)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+
+        <div class="bs-docs-section">
+            <h1 id="H7" class="page-header">spaInput</h1>
+
+            <p>
+                Single input test box 
+            </p>
+        
+            <div class="bs-example" data-example-id="simple-page-header">
+                <pre>
+                    <code class="language-html" data-lang="html">
+                        <span class="nt">&lt;div </span><span class="na">id=</span><span class="s">"spaInput" </span><span class="na">label=</span><span class="s">"Price" </span><span class="na">dataset=</span><span class="s">"dsBrowse" </span><span class="na">column=</span><span class="s">"unit_price" </span><span class="na">dataFormat=</span><span class="s">"numeric" </span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <h4 id="H8">Attributes</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Purpose</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                        <td>type</td>
+                        <td>Identifies the HTML element id</td>
+                    </tr>
+                    <tr>
+                        <td>Label</td>
+                        <td>Labels the field</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>dataset</td>
+                        <td>name of the dataset</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>column</td>
+                        <td>name of the column in the dataset</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>dataFormat</td>
+                        <td>numeric, datetime, date</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4 id="H9">Methods</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Parameters</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>setInputValue</td>
+                        <td>(id, value)</td>
+                        <td>Used to set the value of control</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+
+        <div class="bs-docs-section">
+            <h1 id="H10" class="page-header">spaCheck</h1>
+
+            <p>
+                Check box 
+            </p>
+        
+            <div class="bs-example" data-example-id="simple-page-header">
+                <pre>
+                    <code class="language-html" data-lang="html">
+                        <span class="nt">&lt;div </span><span class="na">id=</span><span class="s">"spaCheck" </span><span class="na">label=</span><span class="s">"Choice" </span><span class="na">dataset=</span><span class="s">"dsBrowse" </span><span class="na">column=</span><span class="s">"code" </span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <h4 id="H11">Attributes</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Purpose</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                        <td>type</td>
+                        <td>Identifies the HTML element id</td>
+                    </tr>
+                    <tr>
+                        <td>Label</td>
+                        <td>Labels the field</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>dataset</td>
+                        <td>name of the dataset</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>column</td>
+                        <td>name of the column in the dataset</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4 id="H12">Methods</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Parameters</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>setCheckValue</td>
+                        <td>(id, value)</td>
+                        <td>Used to set the value of control</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+
+        <div class="bs-docs-section">
+            <h1 id="H13" class="page-header">spaText</h1>
+
+            <p>
+                Multi-line text box 
+            </p>
+        
+            <div class="bs-example" data-example-id="simple-page-header">
+                <pre>
+                    <code class="language-html" data-lang="html">
+                        <span class="nt">&lt;div </span><span class="na">id=</span><span class="s">"spaText" </span><span class="na">label=</span><span class="s">"Notes" </span><span class="na">dataset=</span><span class="s">"dsBrowse" </span><span class="na">column=</span><span class="s">"description" </span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <h4 id="H14">Attributes</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Purpose</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                        <td>type</td>
+                        <td>Identifies the HTML element id</td>
+                    </tr>
+                    <tr>
+                        <td>Label</td>
+                        <td>Labels the field</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>dataset</td>
+                        <td>name of the dataset</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>column</td>
+                        <td>name of the column in the dataset</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4 id="H15">Methods</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Parameters</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>setTextValue</td>
+                        <td>(id, value)</td>
+                        <td>Used to set the value of control</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+
+        <div class="bs-docs-section">
+            <h1 id="H16" class="page-header">spaSelect</h1>
+
+            <p>
+                Combobox 
+            </p>
+        
+            <div class="bs-example" data-example-id="simple-page-header">
+                <pre>
+                    <code class="language-html" data-lang="html">
+                        <span class="nt">&lt;div </span><span class="na">id=</span><span class="s">"spaSelect" </span><span class="na">label=</span><span class="s">"Choose" </span><span class="na">dataset=</span><span class="s">"dsBrowse" </span><span class="na">column=</span><span class="s">"some_code" </span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <h4 id="H17">Attributes</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Purpose</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                        <td>type</td>
+                        <td>Identifies the HTML element id</td>
+                    </tr>
+                    <tr>
+                        <td>Label</td>
+                        <td>Labels the field</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>dataset</td>
+                        <td>name of the dataset</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>column</td>
+                        <td>name of the column in the dataset</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4 id="H18">Methods</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped js-options-table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Parameters</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>setSelectValue</td>
+                        <td>(id, value)</td>
+                        <td>Used to set the value of control</td>
+                    </tr>
+                    <tr>
+                        <td>getSelectValue</td>
+                        <td>(id)</td>
+                        <td>Get the value of control</td>
+                    </tr>
+                    <tr>
+                        <td>addSelectOptions</td>
+                        <td>(id, value)</td>
+                        <td>Provides the options to the combobox items can be a String, 2 Dimensional Array or Object</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../bootstrap/js/jquery.js" type="text/javascript"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>
+
+
+

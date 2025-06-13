@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://throwdownplanner.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://throwdownplanner.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://throwdownplanner.com/">
+      <s:element name="SignIn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SignInResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SSO">
+        <s:complexType />
+      </s:element>
+      <s:element name="SSOResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ADLookup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ADLookupResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SignOut">
+        <s:complexType />
+      </s:element>
+      <s:element name="SignOutResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="BrowserClosed">
+        <s:complexType />
+      </s:element>
+      <s:element name="BrowserClosedResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="KeepSessionAlive">
+        <s:complexType />
+      </s:element>
+      <s:element name="KeepSessionAliveResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="TemporaryPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login_name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TemporaryPasswordResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdatePassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePasswordResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SupportSignIn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SupportSignInResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SupportSignInResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LinkSite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="site_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LinkSiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LinkSiteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SignInSoapIn">
+    <wsdl:part name="parameters" element="tns:SignIn" />
+  </wsdl:message>
+  <wsdl:message name="SignInSoapOut">
+    <wsdl:part name="parameters" element="tns:SignInResponse" />
+  </wsdl:message>
+  <wsdl:message name="SSOSoapIn">
+    <wsdl:part name="parameters" element="tns:SSO" />
+  </wsdl:message>
+  <wsdl:message name="SSOSoapOut">
+    <wsdl:part name="parameters" element="tns:SSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="ADLookupSoapIn">
+    <wsdl:part name="parameters" element="tns:ADLookup" />
+  </wsdl:message>
+  <wsdl:message name="ADLookupSoapOut">
+    <wsdl:part name="parameters" element="tns:ADLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="SignOutSoapIn">
+    <wsdl:part name="parameters" element="tns:SignOut" />
+  </wsdl:message>
+  <wsdl:message name="SignOutSoapOut">
+    <wsdl:part name="parameters" element="tns:SignOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="BrowserClosedSoapIn">
+    <wsdl:part name="parameters" element="tns:BrowserClosed" />
+  </wsdl:message>
+  <wsdl:message name="BrowserClosedSoapOut">
+    <wsdl:part name="parameters" element="tns:BrowserClosedResponse" />
+  </wsdl:message>
+  <wsdl:message name="KeepSessionAliveSoapIn">
+    <wsdl:part name="parameters" element="tns:KeepSessionAlive" />
+  </wsdl:message>
+  <wsdl:message name="KeepSessionAliveSoapOut">
+    <wsdl:part name="parameters" element="tns:KeepSessionAliveResponse" />
+  </wsdl:message>
+  <wsdl:message name="TemporaryPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:TemporaryPassword" />
+  </wsdl:message>
+  <wsdl:message name="TemporaryPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:TemporaryPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePassword" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="SupportSignInSoapIn">
+    <wsdl:part name="parameters" element="tns:SupportSignIn" />
+  </wsdl:message>
+  <wsdl:message name="SupportSignInSoapOut">
+    <wsdl:part name="parameters" element="tns:SupportSignInResponse" />
+  </wsdl:message>
+  <wsdl:message name="LinkSiteSoapIn">
+    <wsdl:part name="parameters" element="tns:LinkSite" />
+  </wsdl:message>
+  <wsdl:message name="LinkSiteSoapOut">
+    <wsdl:part name="parameters" element="tns:LinkSiteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="authenticate_ServicesSoap">
+    <wsdl:operation name="SignIn">
+      <wsdl:input message="tns:SignInSoapIn" />
+      <wsdl:output message="tns:SignInSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SSO">
+      <wsdl:input message="tns:SSOSoapIn" />
+      <wsdl:output message="tns:SSOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ADLookup">
+      <wsdl:input message="tns:ADLookupSoapIn" />
+      <wsdl:output message="tns:ADLookupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SignOut">
+      <wsdl:input message="tns:SignOutSoapIn" />
+      <wsdl:output message="tns:SignOutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BrowserClosed">
+      <wsdl:input message="tns:BrowserClosedSoapIn" />
+      <wsdl:output message="tns:BrowserClosedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KeepSessionAlive">
+      <wsdl:input message="tns:KeepSessionAliveSoapIn" />
+      <wsdl:output message="tns:KeepSessionAliveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TemporaryPassword">
+      <wsdl:input message="tns:TemporaryPasswordSoapIn" />
+      <wsdl:output message="tns:TemporaryPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePassword">
+      <wsdl:input message="tns:UpdatePasswordSoapIn" />
+      <wsdl:output message="tns:UpdatePasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SupportSignIn">
+      <wsdl:input message="tns:SupportSignInSoapIn" />
+      <wsdl:output message="tns:SupportSignInSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LinkSite">
+      <wsdl:input message="tns:LinkSiteSoapIn" />
+      <wsdl:output message="tns:LinkSiteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="authenticate_ServicesSoap" type="tns:authenticate_ServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SignIn">
+      <soap:operation soapAction="http://throwdownplanner.com/SignIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSO">
+      <soap:operation soapAction="http://throwdownplanner.com/SSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ADLookup">
+      <soap:operation soapAction="http://throwdownplanner.com/ADLookup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignOut">
+      <soap:operation soapAction="http://throwdownplanner.com/SignOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BrowserClosed">
+      <soap:operation soapAction="http://throwdownplanner.com/BrowserClosed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KeepSessionAlive">
+      <soap:operation soapAction="http://throwdownplanner.com/KeepSessionAlive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TemporaryPassword">
+      <soap:operation soapAction="http://throwdownplanner.com/TemporaryPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePassword">
+      <soap:operation soapAction="http://throwdownplanner.com/UpdatePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SupportSignIn">
+      <soap:operation soapAction="http://throwdownplanner.com/SupportSignIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LinkSite">
+      <soap:operation soapAction="http://throwdownplanner.com/LinkSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="authenticate_ServicesSoap12" type="tns:authenticate_ServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SignIn">
+      <soap12:operation soapAction="http://throwdownplanner.com/SignIn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSO">
+      <soap12:operation soapAction="http://throwdownplanner.com/SSO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ADLookup">
+      <soap12:operation soapAction="http://throwdownplanner.com/ADLookup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignOut">
+      <soap12:operation soapAction="http://throwdownplanner.com/SignOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BrowserClosed">
+      <soap12:operation soapAction="http://throwdownplanner.com/BrowserClosed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KeepSessionAlive">
+      <soap12:operation soapAction="http://throwdownplanner.com/KeepSessionAlive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TemporaryPassword">
+      <soap12:operation soapAction="http://throwdownplanner.com/TemporaryPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePassword">
+      <soap12:operation soapAction="http://throwdownplanner.com/UpdatePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SupportSignIn">
+      <soap12:operation soapAction="http://throwdownplanner.com/SupportSignIn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LinkSite">
+      <soap12:operation soapAction="http://throwdownplanner.com/LinkSite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="authenticate_Services">
+    <wsdl:port name="authenticate_ServicesSoap" binding="tns:authenticate_ServicesSoap">
+      <soap:address location="http://localhost:51713/Portal/services/authenticate_Services.asmx" />
+    </wsdl:port>
+    <wsdl:port name="authenticate_ServicesSoap12" binding="tns:authenticate_ServicesSoap12">
+      <soap12:address location="http://localhost:51713/Portal/services/authenticate_Services.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

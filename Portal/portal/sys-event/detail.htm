@@ -1,0 +1,20 @@
+﻿    <div spaDataset="dsDetail"></div>
+    
+    <div spaHeader="System Events">
+    </div> 
+
+    <div spaPanel="eventPanel" title="Event Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+
+                <div spaInput="event_date" dataset="dsDetail" dataFormat="datetime" column="event_date" label="Event Date" ></div>
+                <div spaInput="event_type" dataset="dsDetail" column="event_type_name" label="Event Type" ></div>
+                <div spaInput="event_category" dataset="dsDetail" column="event_category" label="Category" ></div>
+                <div spaInput="summary" dataset="dsDetail" column="event_summary" label="Event Summary" ></div>
+                <div spaBlob="details" dataset="dsDetail" column="event_details" label="Event Details" ></div>
+            
+            </form>
+        </div>
+    </div>
+
+    <div spaFooter></div>

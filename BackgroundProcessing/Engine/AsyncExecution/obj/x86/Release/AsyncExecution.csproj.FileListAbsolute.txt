@@ -1,0 +1,14 @@
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\AsyncExecution.exe.config
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\AsyncExecution.exe
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\AsyncExecution.pdb
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\itextsharp.dll
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\log4net.dll
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\MySql.Data.dll
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\Newtonsoft.Json.dll
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\itextsharp.xml
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\log4net.pdb
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\log4net.xml
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\Newtonsoft.Json.pdb
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\bin\Release\Newtonsoft.Json.xml
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\obj\x86\Release\AsyncExecution.exe
+C:\RDM\BackgroundProcessing\Engine\AsyncExecution\obj\x86\Release\AsyncExecution.pdb

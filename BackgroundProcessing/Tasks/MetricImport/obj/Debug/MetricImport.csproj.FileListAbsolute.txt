@@ -1,0 +1,10 @@
+C:\RDM\BackgroundProcessing\Tasks\MetricImport\obj\Debug\MetricImport.csprojResolveAssemblyReference.cache
+C:\RDM\BackgroundProcessing\Tasks\MetricImport\bin\Debug\MetricImport.dll
+C:\RDM\BackgroundProcessing\Tasks\MetricImport\bin\Debug\MetricImport.pdb
+C:\RDM\BackgroundProcessing\Tasks\MetricImport\bin\Debug\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\MetricImport\bin\Debug\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\MetricImport\bin\Debug\AsyncLibrary.pdb
+C:\RDM\BackgroundProcessing\Tasks\MetricImport\bin\Debug\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\MetricImport\bin\Debug\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\MetricImport\obj\Debug\MetricImport.dll
+C:\RDM\BackgroundProcessing\Tasks\MetricImport\obj\Debug\MetricImport.pdb

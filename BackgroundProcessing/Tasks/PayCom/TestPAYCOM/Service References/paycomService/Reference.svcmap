@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8ad20485-a001-4c0d-aa53-0203a5b0ee1e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://www.paycomonline.net/paycomapi/v1.1/paycomapi.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PaycomAPI5.xsd" MetadataType="Schema" ID="3906910e-a307-43bb-a45d-075942fe9dd8" SourceId="1" SourceUrl="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd0" />
+    <MetadataFile FileName="PaycomAPI51.xsd" MetadataType="Schema" ID="4298742e-5957-4092-a0d5-0d2547310901" SourceId="1" SourceUrl="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd1" />
+    <MetadataFile FileName="PaycomAPI52.xsd" MetadataType="Schema" ID="da9c555e-dac0-40d8-be97-fb61463566df" SourceId="1" SourceUrl="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd2" />
+    <MetadataFile FileName="PaycomAPI53.xsd" MetadataType="Schema" ID="e12daafa-365c-4654-a5e5-80332ab0ca1b" SourceId="1" SourceUrl="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd3" />
+    <MetadataFile FileName="PaycomAPI54.xsd" MetadataType="Schema" ID="de1408aa-1ac6-4e75-80f0-f0fe92fed3f9" SourceId="1" SourceUrl="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd4" />
+    <MetadataFile FileName="PaycomAPI2.wsdl" MetadataType="Wsdl" ID="6fc621b7-9692-4c5a-83fb-b599eb03d10e" SourceId="1" SourceUrl="https://www.paycomonline.net/paycomapi/v1.1/paycomapi.svc" />
+    <MetadataFile FileName="PaycomAPI21.wsdl" MetadataType="Wsdl" ID="784c2d1b-e90a-4265-bc83-a6d60001eb58" SourceId="1" SourceUrl="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

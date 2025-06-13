@@ -1,0 +1,9 @@
+C:\RDM\BackgroundProcessing\Tasks\Testing\TestUI\bin\Debug\TestUI.exe
+C:\RDM\BackgroundProcessing\Tasks\Testing\TestUI\bin\Debug\TestUI.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\TestUI\obj\x86\Debug\TestUI.Form1.resources
+C:\RDM\BackgroundProcessing\Tasks\Testing\TestUI\obj\x86\Debug\TestUI.Properties.Resources.resources
+C:\RDM\BackgroundProcessing\Tasks\Testing\TestUI\obj\x86\Debug\TestUI.csproj.GenerateResource.Cache
+C:\RDM\BackgroundProcessing\Tasks\Testing\TestUI\obj\x86\Debug\TestUI.exe
+C:\RDM\BackgroundProcessing\Tasks\Testing\TestUI\obj\x86\Debug\TestUI.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\TestUI\bin\Debug\ChilkatDotNet4.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\TestUI\obj\x86\Debug\TestUI.csprojResolveAssemblyReference.cache

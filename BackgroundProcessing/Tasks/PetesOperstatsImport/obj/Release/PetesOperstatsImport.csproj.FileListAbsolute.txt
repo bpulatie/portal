@@ -1,0 +1,9 @@
+C:\RDM\BackgroundProcessing\Tasks\PetesOperstatsImport\bin\Release\PetesOperstatsImport.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOperstatsImport\bin\Release\PetesOperstatsImport.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesOperstatsImport\bin\Release\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOperstatsImport\bin\Release\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOperstatsImport\bin\Release\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesOperstatsImport\bin\Release\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\PetesOperstatsImport\obj\Release\PetesOperstatsImport.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOperstatsImport\obj\Release\PetesOperstatsImport.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesOperstatsImport\obj\Release\PetesOperstatsImport.csprojResolveAssemblyReference.cache

@@ -1,0 +1,29 @@
+﻿    <div spaDataset="dsUser"></div>
+    <div spaDataset="dsBrowseEvents"></div>
+    <div spaDataset="dsSelectEvent"></div>
+
+    <div spaHeader="User Profile">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+    </div> 
+
+    <div spaPanel="userPanel" title="User Profile">
+        <div spaTabPanel>
+            
+            <div spaTab="profile" label="Profile">
+                <div spaInput="firstname" dataset="dsUser" column="first_name" label="First Name" ></div>
+                <div spaInput="lastname" dataset="dsUser" column="last_name" label="Last Name" ></div>
+                <div spaInput="email" dataset="dsUser" column="email" label="Email" ></div>
+                <div spaSelect="style" dataset="dsUser" column="style_preference" label="Style Preference" ></div>
+                <div spaSelect="menu" dataset="dsUser" column="menu_location" label="Menu Preference" ></div>
+            </div>
+
+            <div spaTab="subs" label="Event Subscriptions">
+                <div spaGrid="eventGrid" dataset="dsBrowseEvents"></div>
+            </div>   
+
+        </div>
+    </div>
+
+    <div spaFooter></div>
+
+

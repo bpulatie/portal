@@ -1,0 +1,65 @@
+/*body	{background:#f4f4f4}
+*/
+
+.hover {cursor:pointer; }
+.key   {text-decoration:underline;}
+
+.spa-grid {
+	width:100%;
+}
+
+.spa-grid-header {
+	position:relative;
+	float:left;
+	display:inline-block;
+	width:100%;
+	padding-right:16px;
+	/*background-color: #334767;	
+	color: #ffffff;	*/
+}
+
+.spa-grid-column-header {
+	padding:5px;
+	position:relative;
+	float:left;
+	overflow:hidden;
+	font-weight:bold;
+	border-bottom:1px solid #cccccc;	
+}
+
+.spa-grid-body {
+	width:100%;
+	overflow-y:scroll;
+	/*background-color:#dddddd;*/
+}
+
+.spa-grid-row {
+	position:relative;
+	float:left;
+	display:inline-block;
+	width:100%;
+	border-bottom:1px solid #f1f1f1;	
+}
+
+.spa-grid-column {
+    /*border-left:1px solid #cccccc;*/
+	padding:5px;
+	position:relative;
+	float:left;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.spa-space-below {
+    margin-bottom:10px;
+}
+
+
+.ellipsis {
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}

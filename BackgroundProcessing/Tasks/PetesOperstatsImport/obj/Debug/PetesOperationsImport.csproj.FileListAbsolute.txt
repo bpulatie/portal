@@ -1,0 +1,9 @@
+C:\RDM\BackgroundProcessing\Tasks\PetesOperationsImport\bin\Debug\PetesOperationsImport.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOperationsImport\bin\Debug\PetesOperationsImport.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesOperationsImport\bin\Debug\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOperationsImport\bin\Debug\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOperationsImport\bin\Debug\AsyncLibrary.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesOperationsImport\bin\Debug\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesOperationsImport\bin\Debug\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\PetesOperationsImport\obj\Debug\PetesOperationsImport.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOperationsImport\obj\Debug\PetesOperationsImport.pdb

@@ -1,0 +1,22 @@
+﻿    <div spaDataset="dsDetail"></div>    
+
+    <div spaHeader="Note Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+    
+    <div spaPanel="notePanel" title="Note Detail">
+        <div spaTabPanel>
+
+            <div spaTab="note" label="Note">
+                <div spaInput="summary" dataset="dsDetail" column="summary" label="Summary" ></div>
+                <div spaDate="creation_date" dataset="dsDetail" column="creation_date" readonly label="Creation Date"></div>
+                <div spaDate="follow_up_date" dataset="dsDetail" column="follow_up_date" label="Follow Up Date"></div>
+                <div spaText="description" dataset="dsDetail" column="description" rows="10" label="Description" ></div>
+            </div>                            
+
+        </div>
+    </div>
+
+    <div spaFooter></div> 
+

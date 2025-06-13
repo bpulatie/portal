@@ -1,0 +1,14 @@
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\bin\Release\MetricAlert.dll
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\bin\Release\MetricAlert.pdb
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\bin\Release\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\bin\Release\itextsharp.dll
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\bin\Release\Newtonsoft.Json.dll
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\bin\Release\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\bin\Release\itextsharp.xml
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\bin\Release\Newtonsoft.Json.pdb
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\bin\Release\Newtonsoft.Json.xml
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\bin\Release\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\bin\Release\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\obj\Release\MetricAlert.dll
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\obj\Release\MetricAlert.pdb
+C:\RDM\BackgroundProcessing\Tasks\Murphy\MetricAlert\obj\Release\MetricAlert.csprojResolveAssemblyReference.cache

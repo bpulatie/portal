@@ -1,0 +1,14 @@
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Release\SuccessTask.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Release\SuccessTask.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Release\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Release\itextsharp.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Release\Newtonsoft.Json.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Release\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Release\itextsharp.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Release\Newtonsoft.Json.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Release\Newtonsoft.Json.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Release\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Release\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\obj\Release\SuccessTask.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\obj\Release\SuccessTask.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\obj\Release\SuccessTask.csprojResolveAssemblyReference.cache

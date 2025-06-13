@@ -1,0 +1,23 @@
+﻿    <div spaDataset="dsDetail"></div>
+
+    <div spaHeader="Pay Period Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <!--<span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>-->
+    </div> 
+    
+    <!-- Content goes here -->
+    <div spaPanel="periodPanel" title="Pay Period Detail">
+
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div spaInput="week_no" dataset="dsDetail" column="week_no" label="Week No" ></div>
+                <div spaDate="start_date" dataset="dsDetail" column="start_date" label="Start Date"></div>
+                <div spaDate="end_date" dataset="dsDetail" column="end_date" label="End Date"></div>
+                <div spaSelect="status_code" dataset="dsDetail" column="status_code" label="Status"></div>
+            </form>   
+        </div>
+
+    </div>
+
+    <div spaFooter></div> 
+

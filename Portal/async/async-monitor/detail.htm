@@ -1,0 +1,29 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsBrowseTasks"></div>
+      
+    <div spaHeader="AsyncProcessor Monitor Detail">
+    </div> 
+
+    <div spapanel="monitorPanel" title="AsyncProcessor Monitor Detail">
+
+        <div spaTabPanel>
+
+            <div spaTab="job" label="Job">
+                <div spaInput="job_name" readonly dataset="dsDetail" column="job_name" label="Job Name" ></div>
+                <div spaInput="process_id" readonly dataset="dsDetail" column="process_id" label="Process ID" ></div>
+                <div spaInput="queue_name" readonly dataset="dsDetail" column="queue_name" label="Queue Name" ></div>
+                <div spaInput="queued_time" readonly dataset="dsDetail" column="queued_time" label="Queued Time" dataType="datetime" dataFormat="datetime" ></div>
+                <div spaInput="start_time" readonly dataset="dsDetail" column="start_time" label="Start Time" dataType="datetime" dataFormat="datetime" ></div>
+                <div spaInput="end_time" readonly dataset="dsDetail" column="end_time" label="End Time" dataType="datetime" dataFormat="datetime" ></div>
+                <div spaInput="start_name" readonly dataset="dsDetail" column="status_name" label="Status" ></div>
+                <div spaText="context" readonly dataset="dsDetail" column="context" label="Context"></div>
+            </div>
+
+            <div spaTab="tasks" label="Task Detail">
+                <div spaGrid="taskGrid" dataset="dsBrowseTasks"></div>
+            </div>   
+
+        </div>
+    </div>
+
+    <div spaFooter></div>

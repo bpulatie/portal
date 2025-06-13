@@ -1,0 +1,18 @@
+﻿{
+	"applications.account.browse": {
+		"spaHeader": "Customer Account Maintenance"
+	},
+	"applications.account.detail": {
+		"spaHeader": "Customer Account Maintenance",
+		"spaSave": "Save",
+		"spaDelete": "Delete",
+		"spaPanelTitle": "Account Detail",
+		"spaTab1": "Account",
+		"spaTab2": "Customers",
+		"spaAccountName": "Account Name",
+		"spaAccountNo": "Account No",
+		"spaDescription": "Description",
+		"spaModalTitle": "Select Customer",
+		"spaClose": "Close"
+	}
+}

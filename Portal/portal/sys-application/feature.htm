@@ -1,0 +1,21 @@
+﻿    <div spaDataset="dsGroup"></div>
+    <div spaDataset="dsDetail"></div>
+    
+    <div spaHeader="Feature Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spaPanel="featurePanel" title="Feature Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+
+                <div spaInput="name" dataset="dsDetail" column="feature_name" label="Feature Name" ></div>
+                <div spaInput="moniker" dataset="dsDetail" column="moniker" label="Moniker" ></div>
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            
+            </form>
+        </div>
+    </div>
+
+    <div spaFooter></div>

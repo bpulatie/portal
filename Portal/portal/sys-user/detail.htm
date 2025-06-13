@@ -1,0 +1,86 @@
+﻿    <div spaDataset="dsDetail"></div>    
+    <div spaDataset="dsBrowseSites"></div>
+    <div spaDataset="dsSelectSite"></div>
+    <div spaDataset="dsBrowseRoles"></div>
+    <div spaDataset="dsSelectRole"></div>
+
+    <div spaHeader="User Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+    
+    <div spaPanel="userPanel" title="User Detail">
+        <div spaTabPanel>
+
+            <div spaTab="user" label="User">
+                <div spaInput="firstname" dataset="dsDetail" column="first_name" label="First Name" ></div>
+                <div spaInput="lastname" dataset="dsDetail" column="last_name" label="Last Name" ></div>
+                <div spaInput="login_name" dataset="dsDetail" column="login_name" label="Login Name" ></div>
+                <div spaInput="email" dataset="dsDetail" column="email" label="Email" ></div>
+                <!--<div spaSelect="gender" dataset="dsDetail" column="gender" label="Gender" ></div>
+                <div spaDate="date_of_birth" dataset="dsDetail" column="date_of_birth" label="Date of Birth"></div>-->
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            </div>                            
+
+            <div spaTab="image" label="Image">
+                <div class="col-md-10 col-md-offset-1">                
+                    <div id="kv-avatar-errors-2" class="center-block" ></div>
+                    <div class="kv-avatar center-block" >
+                        <input id="avatar-2" name="avatar-2" type="file" class="file-loading">
+                    </div>
+                </div>
+            </div>                            
+
+            <div spaTab="sites" label="Sites">
+                <div spaGrid="siteGrid" dataset="dsBrowseSites"></div>
+            </div>                            
+
+            <div spaTab="roles" label="Roles">
+                <div spaGrid="roleGrid" dataset="dsBrowseRoles"></div>
+            </div>                            
+
+        </div>
+    </div>
+
+    <div spaFooter></div> 
+
+    <!-- Start Modal -->
+
+    <div spaModal="siteModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Select Site</h4>
+                </div>
+                <div class="modal-body">
+                    <div spaGrid="selectSiteGrid" dataset="dsSelectSite"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Modal -->
+
+    <!-- Start Modal -->
+    <div spaModal="roleModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Select Role</h4>
+                </div>
+                <div class="modal-body">
+                    <div spaGrid="selectRoleGrid" dataset="dsSelectRole"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <!-- End Modal -->

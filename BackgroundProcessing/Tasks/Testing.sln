@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuccessTask", "Testing\SuccessTask\SuccessTask.csproj", "{1CB5569E-F7CE-4989-8C8E-3E881622CB4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FailureTask", "Testing\FailureTask\FailureTask.csproj", "{D05650C5-2AA3-4C43-A4E5-2AC01873A345}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricAlert", "Murphy\MetricAlert\MetricAlert.csproj", "{6E254CA2-2C19-4599-BAF2-D3E3102D71D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CB5569E-F7CE-4989-8C8E-3E881622CB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CB5569E-F7CE-4989-8C8E-3E881622CB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CB5569E-F7CE-4989-8C8E-3E881622CB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CB5569E-F7CE-4989-8C8E-3E881622CB4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D05650C5-2AA3-4C43-A4E5-2AC01873A345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05650C5-2AA3-4C43-A4E5-2AC01873A345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05650C5-2AA3-4C43-A4E5-2AC01873A345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05650C5-2AA3-4C43-A4E5-2AC01873A345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E254CA2-2C19-4599-BAF2-D3E3102D71D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E254CA2-2C19-4599-BAF2-D3E3102D71D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E254CA2-2C19-4599-BAF2-D3E3102D71D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E254CA2-2C19-4599-BAF2-D3E3102D71D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

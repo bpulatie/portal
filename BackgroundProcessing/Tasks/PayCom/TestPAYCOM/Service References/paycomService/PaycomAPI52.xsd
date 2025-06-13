@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/PaycomAPI" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PaycomAPI" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Paycom.GeneralLedger.Core.Model.Online" />
+  <xs:complexType name="PCMLoginResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+      <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMLoginResult" nillable="true" type="tns:PCMLoginResult" />
+  <xs:complexType name="ArrayOfError">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Error" nillable="true" type="tns:Error" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfError" nillable="true" type="tns:ArrayOfError" />
+  <xs:complexType name="Error">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="error" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="error_code" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Error" nillable="true" type="tns:Error" />
+  <xs:complexType name="PCMLogoutResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMLogoutResult" nillable="true" type="tns:PCMLogoutResult" />
+  <xs:complexType name="PCMPunchImportResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMPunchImportResult" nillable="true" type="tns:PCMPunchImportResult" />
+  <xs:complexType name="PCMEEDirectoryResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeDirectory" nillable="true" type="tns:ArrayOfdirectory_employee" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMEEDirectoryResult" nillable="true" type="tns:PCMEEDirectoryResult" />
+  <xs:complexType name="ArrayOfdirectory_employee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="directory_employee" nillable="true" type="tns:directory_employee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfdirectory_employee" nillable="true" type="tns:ArrayOfdirectory_employee" />
+  <xs:complexType name="directory_employee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cat1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat10desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat11" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat11desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat12" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat12desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat13" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat13desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat14" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat14desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat15" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat15desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat16" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat16desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat17" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat17desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat18" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat18desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat19" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat19desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat1desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat20" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat20desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat2desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat3desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat4desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat5desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat6desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat7desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat8desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat9desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cityaddr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clockseq" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="deptcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="deptdesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eebadge" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eename" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eestatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="homephone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="homestate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="streetaddr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="zipcode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="directory_employee" nillable="true" type="tns:directory_employee" />
+  <xs:complexType name="PCMClientLaborResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientLabor" nillable="true" type="tns:ArrayOfclient_labor" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMClientLaborResult" nillable="true" type="tns:PCMClientLaborResult" />
+  <xs:complexType name="ArrayOfclient_labor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="client_labor" nillable="true" type="tns:client_labor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfclient_labor" nillable="true" type="tns:ArrayOfclient_labor" />
+  <xs:complexType name="client_labor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="catcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="catdesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="detailcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="detaildesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="glcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="glcodedef" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hideonline" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="client_labor" nillable="true" type="tns:client_labor" />
+  <xs:complexType name="PCMClientEarningResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientEarnings" nillable="true" type="tns:ArrayOfclient_earning" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMClientEarningResult" nillable="true" type="tns:PCMClientEarningResult" />
+  <xs:complexType name="ArrayOfclient_earning">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="client_earning" nillable="true" type="tns:client_earning" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfclient_earning" nillable="true" type="tns:ArrayOfclient_earning" />
+  <xs:complexType name="client_earning">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="earncode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="earndesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hideonline" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="client_earning" nillable="true" type="tns:client_earning" />
+  <xs:complexType name="PCMStreamedEmployeeResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeResult" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMStreamedEmployeeResult" nillable="true" type="tns:PCMStreamedEmployeeResult" />
+  <xs:complexType name="PCMEmployeeResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeResult" nillable="true" type="tns:ArrayOfEmployee" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMEmployeeResult" nillable="true" type="tns:PCMEmployeeResult" />
+  <xs:complexType name="ArrayOfEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Employee" nillable="true" type="tns:Employee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployee" nillable="true" type="tns:ArrayOfEmployee" />
+  <xs:complexType name="Employee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Actual_Marital_Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Age" type="xs:int" />
+      <xs:element minOccurs="0" name="Alternate_Pay_Frequency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Birth_Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClockSequenceNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cobra_End" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Cobra_Start" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Commmision_Only" type="xs:int" />
+      <xs:element minOccurs="0" name="Current_Key_Employee" type="xs:int" />
+      <xs:element minOccurs="0" name="Custom_Standard_Hours" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Department_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Department_Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEOC_Class" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EE_Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Eligible_401k" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Emergency_1_Contact" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Emergency_1_Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Emergency_1_Relationship" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Emergency_2_Contact" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Emergency_2_Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Emergency_2_Relationship" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Emergency_3_Contact" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Emergency_3_Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Emergency_3_Relationship" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Employee_Added" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Employee_Badge" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Employee_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Employee_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Employee_Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Employee_Supervisor_Level" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Employee_Supervisor_Pin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Employee_Terminal_Group" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Employee_Type_1099" type="xs:int" />
+      <xs:element minOccurs="0" name="Ethnic_Background" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullTime_or_PartTime" type="xs:int" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Has_Direct_Deposit" type="xs:int" />
+      <xs:element minOccurs="0" name="Highly_Comp_Employee" type="xs:int" />
+      <xs:element minOccurs="0" name="Hire_Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Hourly_Or_Salary" type="xs:int" />
+      <xs:element minOccurs="0" name="Hours_401k" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Labor_Allocation_Details" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Last_Pay_Change" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Last_Review" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Leave_End" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Leave_Start" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Length_of_Service_Since_Hire" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Length_of_Service_Since_Rehire" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Match_Eligible" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="New_Hire_Report_Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Next_Review" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NickName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PartTime_To_FullTime_Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Part_Num_401k" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Participation_401k" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Pay_Class" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pay_Frequency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Personal_Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Position" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Previous_Termination_Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Primary_Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Print_EE_Message" type="xs:int" />
+      <xs:element minOccurs="0" name="Rehire_Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Report_New_Hire" type="xs:int" />
+      <xs:element minOccurs="0" name="Retirement_Plan" type="xs:int" />
+      <xs:element minOccurs="0" name="Schedule_Group" type="xs:long" />
+      <xs:element minOccurs="0" name="Secondary_Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Statutory_Employee" type="xs:int" />
+      <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Supervisor_Approval_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Supervisor_Primary" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Supervisor_Primary_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Supervisor_Quaternary" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Supervisor_Quaternary_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Supervisor_Secondary" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Supervisor_Secondary_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Supervisor_Talent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Supervisor_Talent_Management" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Supervisor_Tertiary" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Supervisor_Tertiary_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Termination_Reason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Termination_date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Vets_4212_Emp_Category" type="xs:int" />
+      <xs:element minOccurs="0" name="Vets_4212_Job_Category" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Work_Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zipcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat10desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat11" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat11desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat12" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat12desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat13" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat13desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat14" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat14desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat15" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat15desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat16" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat16desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat17" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat17desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat18" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat18desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat19" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat19desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat1desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat20" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat20desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat2desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat3desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat4desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat5desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat6desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat7desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat8desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat9desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="workers_comp_code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="workers_comp_desc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Employee" nillable="true" type="tns:Employee" />
+  <xs:complexType name="PCMStreamedEmployeeSensitiveResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeSensitiveResult" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMStreamedEmployeeSensitiveResult" nillable="true" type="tns:PCMStreamedEmployeeSensitiveResult" />
+  <xs:complexType name="PCMEmployeeSensitiveResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeSensitiveResult" nillable="true" type="tns:ArrayOfEmployeeSensitive" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMEmployeeSensitiveResult" nillable="true" type="tns:PCMEmployeeSensitiveResult" />
+  <xs:complexType name="ArrayOfEmployeeSensitive">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmployeeSensitive" nillable="true" type="tns:EmployeeSensitive" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployeeSensitive" nillable="true" type="tns:ArrayOfEmployeeSensitive" />
+  <xs:complexType name="EmployeeSensitive">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Employee">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Allocation_ConsecDT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Allocation_ConsecOT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Allocation_DailyDT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Allocation_DailyOT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Allocation_GarciaOT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Allocation_RegRate" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Allocation_WeeklyDT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Allocation_WeeklyOT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Annual_Salary" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Dist_1_Acct_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dist_1_Amount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Dist_1_Rout_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dist_1_Type_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dist_2_Acct_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dist_2_Amount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Dist_2_Rout_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dist_2_Type_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dist_3_Acct_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dist_3_Amount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Dist_3_Rout_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dist_3_Type_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dist_4_Acct_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dist_4_Amount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Dist_4_Rout_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dist_4_Type_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Excessive_Gross" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Excessive_Net" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Hourly_Salary" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Last_Pay_Rate" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Net_Acct_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Net_Rout_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Net_Type_Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Rate_1" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Rate_2" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Rate_3" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Rate_4" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Rate_5" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SS_Number" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmployeeSensitive" nillable="true" type="tns:EmployeeSensitive" />
+  <xs:complexType name="PCMEmployeeChangeResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeChanges" nillable="true" type="tns:ArrayOfEmployeeChange" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMEmployeeChangeResult" nillable="true" type="tns:PCMEmployeeChangeResult" />
+  <xs:complexType name="ArrayOfEmployeeChange">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmployeeChange" nillable="true" type="tns:EmployeeChange" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployeeChange" nillable="true" type="tns:ArrayOfEmployeeChange" />
+  <xs:complexType name="EmployeeChange">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="changedby" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="changedesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="changetime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="changetype" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="childcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clockseq" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eename" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="new_value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="old_value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usertype" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeChange" nillable="true" type="tns:EmployeeChange" />
+  <xs:complexType name="PCMNewhireResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeNewhires" nillable="true" type="tns:ArrayOfEmployeeNewhire" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMNewhireResult" nillable="true" type="tns:PCMNewhireResult" />
+  <xs:complexType name="ArrayOfEmployeeNewhire">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmployeeNewhire" nillable="true" type="tns:EmployeeNewhire" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployeeNewhire" nillable="true" type="tns:ArrayOfEmployeeNewhire" />
+  <xs:complexType name="EmployeeNewhire">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="addedby" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eename" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timeadded" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="usertype" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeNewhire" nillable="true" type="tns:EmployeeNewhire" />
+  <xs:complexType name="PCMPunchHistResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeePunches" nillable="true" type="tns:ArrayOfPunchHistory" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMPunchHistResult" nillable="true" type="tns:PCMPunchHistResult" />
+  <xs:complexType name="ArrayOfPunchHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PunchHistory" nillable="true" type="tns:PunchHistory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPunchHistory" nillable="true" type="tns:ArrayOfPunchHistory" />
+  <xs:complexType name="PunchHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cat1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat10desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat11" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat11desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat12" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat12desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat13" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat13desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat14" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat14desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat15" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat15desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat16" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat16desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat17" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat17desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat18" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat18desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat19" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat19desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat1desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat20" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat20desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat2desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat3desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat4desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat5desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat6desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat7desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat8desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat9desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clockid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clockseq" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clocktype" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="deptcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dollaramount" type="xs:double" />
+      <xs:element minOccurs="0" name="earncode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eebadge" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="entrytype" type="xs:int" />
+      <xs:element minOccurs="0" name="hours" type="xs:double" />
+      <xs:element minOccurs="0" name="isdeleted" type="xs:int" />
+      <xs:element minOccurs="0" name="punchdesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="punchtime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="punchtype" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="taxprofid" type="xs:int" />
+      <xs:element minOccurs="0" name="timeadded" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PunchHistory" nillable="true" type="tns:PunchHistory" />
+  <xs:complexType name="PCMStreamedPunchHistResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeePunches" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMStreamedPunchHistResult" nillable="true" type="tns:PCMStreamedPunchHistResult" />
+  <xs:complexType name="PCMGetTaxResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeTaxResult" nillable="true" type="tns:ArrayOfTaxRow" />
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMGetTaxResult" nillable="true" type="tns:PCMGetTaxResult" />
+  <xs:complexType name="ArrayOfTaxRow">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaxRow" nillable="true" type="tns:TaxRow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaxRow" nillable="true" type="tns:ArrayOfTaxRow" />
+  <xs:complexType name="TaxRow">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Block_FUTA" type="xs:int" />
+      <xs:element minOccurs="0" name="Block_Fed_Tax" type="xs:int" />
+      <xs:element minOccurs="0" name="Block_MED" type="xs:int" />
+      <xs:element minOccurs="0" name="Block_SSC" type="xs:int" />
+      <xs:element minOccurs="0" name="Block_SUI" type="xs:int" />
+      <xs:element minOccurs="0" name="Block_State_Tax" type="xs:int" />
+      <xs:element minOccurs="0" name="Client_Local_Tax_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Client_Local_Tax_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Client_Local_Tax_3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Client_Local_Tax_4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Client_Local_Tax_5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Client_Local_Tax_6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EIC_File_Status" type="ser:char" />
+      <xs:element minOccurs="0" name="Employee_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Employee_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fed_Addl_dollar" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Fed_Addl_percentage" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Fed_Allowances" type="xs:int" />
+      <xs:element minOccurs="0" name="Fed_Filing_Status" type="ser:char" />
+      <xs:element minOccurs="0" name="Lives_in_State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Local_Addl_Amounts" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Local_Exemptions_NYR" type="xs:int" />
+      <xs:element minOccurs="0" name="Local_Tax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Local_Tax_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Local_Tax_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Local_Tax_3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Local_Tax_4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Local_Tax_5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Local_Tax_6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Personal" type="xs:int" />
+      <xs:element minOccurs="0" name="SUI_State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State_Addl_dollar" type="xs:decimal" />
+      <xs:element minOccurs="0" name="State_Addl_percentage" type="xs:decimal" />
+      <xs:element minOccurs="0" name="State_Exemption_Amt" type="xs:decimal" />
+      <xs:element minOccurs="0" name="State_Exemptions_Allowances" type="xs:decimal" />
+      <xs:element minOccurs="0" name="State_Filing_Status" type="ser:char" />
+      <xs:element minOccurs="0" name="Tax_EIC" type="xs:int" />
+      <xs:element minOccurs="0" name="W2_Info_12DD_2011" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="W2_Info_12DD_2012" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="W2_Info_12DD_2013" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="W2_Info_12DD_2014" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="W2_Info_12DD_2015" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="W2_Info_12DD_2016" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Works_in_State" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaxRow" nillable="true" type="tns:TaxRow" />
+  <xs:complexType name="PCMSetEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="operation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMSetEmployee" nillable="true" type="tns:PCMSetEmployee" />
+  <xs:complexType name="PCMSetCategory">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PCMSetEmployee">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PCMSetCategory" nillable="true" type="tns:PCMSetCategory" />
+  <xs:complexType name="PCMAddCategory">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PCMSetEmployee">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PCMAddCategory" nillable="true" type="tns:PCMAddCategory" />
+  <xs:complexType name="RunDateRangeReportRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RunReportRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RunDateRangeReportRequest" nillable="true" type="tns:RunDateRangeReportRequest" />
+  <xs:complexType name="RunReportRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccrualDenominator" type="xs:int" />
+      <xs:element minOccurs="0" name="AccrualNumerator" type="xs:int" />
+      <xs:element minOccurs="0" name="AccrualReversal" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CalculateAccrual" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IncludeManualChecks" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IncludePayrollChecks" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IncludeVoidChecks" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MapId" type="xs:int" />
+      <xs:element minOccurs="0" name="OrderBys" nillable="true" type="tns:ArrayOfOrderBy" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RunReportRequest" nillable="true" type="tns:RunReportRequest" />
+  <xs:complexType name="ArrayOfOrderBy">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderBy" nillable="true" type="tns:OrderBy" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderBy" nillable="true" type="tns:ArrayOfOrderBy" />
+  <xs:complexType name="OrderBy">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ascending" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Field" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderBy" nillable="true" type="tns:OrderBy" />
+  <xs:complexType name="PCMGLRunReportResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="Response" nillable="true" type="tns:RunReportResponse" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMGLRunReportResponse" nillable="true" type="tns:PCMGLRunReportResponse" />
+  <xs:complexType name="RunReportResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Data" nillable="true" type="tns:ArrayOfDataRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RunReportResponse" nillable="true" type="tns:RunReportResponse" />
+  <xs:complexType name="ArrayOfDataRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataRecord" nillable="true" type="tns:DataRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataRecord" nillable="true" type="tns:ArrayOfDataRecord" />
+  <xs:complexType name="DataRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Account" nillable="true" type="tns:ClAccount" />
+      <xs:element minOccurs="0" name="AccountDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CheckDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Credit" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Debit" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Department" nillable="true" type="tns:ClDepartment" />
+      <xs:element minOccurs="0" name="DirectDeposit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Distribution" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Employee" nillable="true" type="tns:ClEmployee" />
+      <xs:element minOccurs="0" name="G2NCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="G2NSub" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GlCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Group" nillable="true" type="tns:GlGroup" />
+      <xs:element minOccurs="0" name="IsDebit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSum" type="xs:boolean" />
+      <xs:element minOccurs="0" name="JobCostDef" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LaborHours" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PeriodEnd" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PeriodStart" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Reference" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TypeCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataRecord" nillable="true" type="tns:DataRecord" />
+  <xs:complexType name="ClAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClAccountCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rank" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" type="xs:int" />
+      <xs:element minOccurs="0" name="TypeCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClAccount" nillable="true" type="tns:ClAccount" />
+  <xs:complexType name="ClDepartment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GlCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GlCodeDefinition" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClDepartment" nillable="true" type="tns:ClDepartment" />
+  <xs:complexType name="ClEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GlCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HomeState" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClEmployee" nillable="true" type="tns:ClEmployee" />
+  <xs:complexType name="GlGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NaturalGlCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Segment" nillable="true" type="tns:GlSegment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GlGroup" nillable="true" type="tns:GlGroup" />
+  <xs:complexType name="GlSegment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GlSegment" nillable="true" type="tns:GlSegment" />
+  <xs:complexType name="RunTransactionReportRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RunReportRequest">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Clientcodes" nillable="true" type="q1:ArrayOfstring" />
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Transactions" nillable="true" type="q2:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RunTransactionReportRequest" nillable="true" type="tns:RunTransactionReportRequest" />
+  <xs:complexType name="GenerateDateRangeReportRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenerateReportRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateDateRangeReportRequest" nillable="true" type="tns:GenerateDateRangeReportRequest" />
+  <xs:complexType name="GenerateReportRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccrualDenominator" type="xs:int" />
+      <xs:element minOccurs="0" name="AccrualNumerator" type="xs:int" />
+      <xs:element minOccurs="0" name="AccrualReversal" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CalculateAccrual" type="xs:boolean" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Employees" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="FileLayoutId" type="xs:int" />
+      <xs:element minOccurs="0" name="IncludeManualChecks" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IncludePayrollChecks" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IncludeVoidChecks" type="xs:boolean" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="LiveStates" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element minOccurs="0" name="MapId" type="xs:int" />
+      <xs:element minOccurs="0" name="OrderBys" nillable="true" type="tns:ArrayOfOrderBy" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="WorkStates" nillable="true" type="q5:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenerateReportRequest" nillable="true" type="tns:GenerateReportRequest" />
+  <xs:complexType name="PCMGLGenerateReportResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="Response" nillable="true" type="tns:ReportResponse" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMGLGenerateReportResponse" nillable="true" type="tns:PCMGLGenerateReportResponse" />
+  <xs:complexType name="ReportResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FileByteArray" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="FileExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Length" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReportResponse" nillable="true" type="tns:ReportResponse" />
+  <xs:complexType name="GenerateTransactionReportRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenerateReportRequest">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Clientcodes" nillable="true" type="q6:ArrayOfstring" />
+          <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Transactions" nillable="true" type="q7:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateTransactionReportRequest" nillable="true" type="tns:GenerateTransactionReportRequest" />
+  <xs:complexType name="PCMGLGetMapsResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessages" nillable="true" type="tns:ArrayOfError" />
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Paycom.GeneralLedger.Core.Model.Online" minOccurs="0" name="Maps" nillable="true" type="q8:ArrayOfGlMap" />
+      <xs:element minOccurs="0" name="record" type="xs:int" />
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCMGLGetMapsResult" nillable="true" type="tns:PCMGLGetMapsResult" />
+</xs:schema>

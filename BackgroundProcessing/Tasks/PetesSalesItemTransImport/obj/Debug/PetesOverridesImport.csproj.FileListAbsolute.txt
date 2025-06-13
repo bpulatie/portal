@@ -1,0 +1,9 @@
+C:\RDM\BackgroundProcessing\Tasks\PetesOverridesImport\bin\Debug\PetesOverridesImport.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOverridesImport\bin\Debug\PetesOverridesImport.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesOverridesImport\bin\Debug\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOverridesImport\bin\Debug\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOverridesImport\bin\Debug\AsyncLibrary.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesOverridesImport\bin\Debug\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesOverridesImport\bin\Debug\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\PetesOverridesImport\obj\Debug\PetesOverridesImport.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesOverridesImport\obj\Debug\PetesOverridesImport.pdb

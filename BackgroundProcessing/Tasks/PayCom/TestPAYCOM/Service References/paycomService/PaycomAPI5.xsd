@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="https://api.paycomonline.net" elementFormDefault="qualified" targetNamespace="https://api.paycomonline.net" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PaycomAPI" />
+  <xs:import schemaLocation="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="api_login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_loginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_loginResult" nillable="true" type="q1:PCMLoginResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_logout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_logoutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_logoutResult" nillable="true" type="q2:PCMLogoutResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_punchimport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="punches" nillable="true" type="tns:ArrayOfpunch" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfpunch">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="punch" nillable="true" type="tns:punch" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpunch" nillable="true" type="tns:ArrayOfpunch" />
+  <xs:complexType name="punch">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cat1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat11" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat12" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat13" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat14" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat15" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat16" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat17" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat18" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat19" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat20" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cat9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clocktype" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="deptcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dollaramount" type="xs:double" />
+      <xs:element minOccurs="0" name="earncode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eebadge" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="entrytype" type="xs:int" />
+      <xs:element minOccurs="0" name="hours" type="xs:double" />
+      <xs:element minOccurs="0" name="punchdesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="punchtime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="punchtype" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="taxprofid" type="xs:int" />
+      <xs:element minOccurs="0" name="timezone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="punch" nillable="true" type="tns:punch" />
+  <xs:element name="api_punchimportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_punchimportResult" nillable="true" type="q3:PCMPunchImportResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_eedirectory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_eedirectoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_eedirectoryResult" nillable="true" type="q4:PCMEEDirectoryResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_clientlabor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_clientlaborResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_clientlaborResult" nillable="true" type="q5:PCMClientLaborResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_clientearning">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_clientearningResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_clientearningResult" nillable="true" type="q6:PCMClientEarningResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_employee_streamed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="eecodes" nillable="true" type="q7:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_employee_streamedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_get_employee_streamedResult" nillable="true" type="q8:PCMStreamedEmployeeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_employee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_employeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_get_employeeResult" nillable="true" type="q9:PCMEmployeeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_employee_sensitive_streamed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="eecodes" nillable="true" type="q10:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_employee_sensitive_streamedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_get_employee_sensitive_streamedResult" nillable="true" type="q11:PCMStreamedEmployeeSensitiveResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_employee_sensitive">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_employee_sensitiveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_get_employee_sensitiveResult" nillable="true" type="q12:PCMEmployeeSensitiveResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_eechanges">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="startdate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="enddate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_eechangesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_get_eechangesResult" nillable="true" type="q13:PCMEmployeeChangeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_eechanges_sensitive">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="startdate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="enddate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_eechanges_sensitiveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_get_eechanges_sensitiveResult" nillable="true" type="q14:PCMEmployeeChangeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_newhire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="startdate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="enddate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_newhireResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_get_newhireResult" nillable="true" type="q15:PCMNewhireResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_punchhistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="startdate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="enddate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isdeleted" type="xs:int" />
+        <xs:element minOccurs="0" name="punchaudit" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_punchhistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_get_punchhistoryResult" nillable="true" type="q16:PCMPunchHistResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_punchhistory_streamed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="startdate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="enddate" type="xs:dateTime" />
+        <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="eecodes" nillable="true" type="q17:ArrayOfstring" />
+        <xs:element minOccurs="0" name="isdeleted" type="xs:int" />
+        <xs:element minOccurs="0" name="punchaudit" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_punchhistory_streamedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_get_punchhistory_streamedResult" nillable="true" type="q18:PCMStreamedPunchHistResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_employee_tax">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_get_employee_taxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_get_employee_taxResult" nillable="true" type="q19:PCMGetTaxResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_set_employee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eecode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fieldname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_set_employeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_set_employeeResult" nillable="true" type="q20:PCMSetEmployee" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_set_categorydetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="catcode" type="xs:int" />
+        <xs:element minOccurs="0" name="detailcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="detaildesc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="glcode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_set_categorydetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_set_categorydetailResult" nillable="true" type="q21:PCMSetCategory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_add_categorydetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="catcode" type="xs:int" />
+        <xs:element minOccurs="0" name="detailcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="detaildesc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="glcode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_add_categorydetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_add_categorydetailResult" nillable="true" type="q22:PCMAddCategory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_RunReportForDateRange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="request" nillable="true" type="q23:RunDateRangeReportRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_RunReportForDateRangeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_RunReportForDateRangeResult" nillable="true" type="q24:PCMGLRunReportResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_RunReportForTransaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="request" nillable="true" type="q25:RunTransactionReportRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_RunReportForTransactionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_RunReportForTransactionResult" nillable="true" type="q26:PCMGLRunReportResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_GenerateReportForDateRange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="request" nillable="true" type="q27:GenerateDateRangeReportRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_GenerateReportForDateRangeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_GenerateReportForDateRangeResult" nillable="true" type="q28:PCMGLGenerateReportResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_GenerateReportForTransaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="request" nillable="true" type="q29:GenerateTransactionReportRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_GenerateReportForTransactionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_GenerateReportForTransactionResult" nillable="true" type="q30:PCMGLGenerateReportResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_GetGLMaps">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="session_id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="api_GetGLMapsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/PaycomAPI" minOccurs="0" name="api_GetGLMapsResult" nillable="true" type="q31:PCMGLGetMapsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

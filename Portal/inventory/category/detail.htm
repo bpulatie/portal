@@ -1,0 +1,20 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsLevel"></div>
+    <div spaDataset="dsParent"></div>
+    
+    <div spaHeader="Category Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spaPanel="topPanel" title="Category Detail">
+        <div spaSelect="category_level_id" dataset="dsDetail" column="category_level_id" label="Category Level" ></div>
+        <div spaSelect="parent_category_id" dataset="dsDetail" column="parent_category_id" label="Parent Category" ></div>
+        <div spaInput="name" dataset="dsDetail" column="name" label="Category Name" ></div>
+        <div spaInput="external_id" dataset="dsDetail" column="external_id" label="External ID" ></div>
+        <div spaText="details" dataset="dsDetail" column="description" label="Description" ></div>
+    </div>
+
+    <div spaFooter></div>
+
+

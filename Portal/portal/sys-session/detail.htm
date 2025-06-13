@@ -1,0 +1,19 @@
+﻿    <div spaDataset="dsDetail"></div>
+    
+    <div spaHeader="Session Detail">
+    </div> 
+
+    <div spaPanel="sessionPanel" title="Session Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div spaInput="start" readonly dataset="dsDetail" column="start_time" dataType="datetime" dataFormat="datetime" label="Start Time" ></div>
+                <div spaInput="last" readonly dataset="dsDetail" column="last_activity_time" dataType="datetime" dataFormat="datetime" label="Last Activity" ></div>
+                <div spaInput="end" readonly dataset="dsDetail" column="end_time" dataType="datetime" dataFormat="datetime" label="End Time" ></div>
+                <div spaInput="lastname" readonly dataset="dsDetail" column="last_name" label="Last Name" ></div>
+                <div spaInput="firstname" readonly dataset="dsDetail" column="first_name" label="First Name" ></div>
+                <div spaInput="status" readonly dataset="dsDetail" column="status_name" label="Status" ></div>
+            </form>
+        </div>
+    </div>
+
+    <div spaFooter></div>

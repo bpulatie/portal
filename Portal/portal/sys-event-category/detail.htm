@@ -1,0 +1,24 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsBrowseEvents"></div>
+    
+    <div spaHeader="System Event Category">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spaPanel="categoryPanel" title="Event Category Detail">
+        <div spaTabPanel>
+
+            <div spaTab="detail" label="Category">
+                <div spaInput="name" dataset="dsDetail" column="event_category_name" label="Category Name" ></div>
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            </div>
+
+            <div spaTab="events" label="Event Types">
+                <div spaGrid="eventGrid" dataset="dsBrowseEvents"></div>
+            </div>   
+            
+        </div>
+    </div>
+
+    <div spaFooter></div>

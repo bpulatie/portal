@@ -1,0 +1,58 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsBrowseFeatures"></div>
+    
+    <div spaHeader="Menu Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spaPanel="menuPanel" title="Menu Header">
+        <div spaTabPanel>
+
+            <div spaTab="menu" label="Menu">
+                <div spaInput="menu_name" dataset="dsDetail" column="menu_name" label="Menu Name" ></div>
+                <div spaInput="sort_order" dataset="dsDetail" column="sort_order" label="Sort Order" dataType="numeric" ></div>
+                <div spaText="details" dataset="dsDetail" column="description" label="Description" ></div>
+            </div>
+
+            <div spaTab="features" label="Items">
+                <div spaGrid="featureGrid" dataset="dsBrowseFeatures"></div>
+            </div>   
+  
+        </div>
+    </div>
+
+    <div spaFooter></div>
+
+
+        <!-- Start Modal -->
+
+    <div spaModal="featureModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Create Menu Item</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="panel-body">
+                        <form class="form-horizontal" role="form">
+                            <div spaInput="menu_item" label="Menu Item" ></div>
+                            <div spaInput="item_sort_order" dataType="numeric" label="Sort Order" ></div>
+                            <div spaSelect="menu_mode" label="Access Mode" ></div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <div spaGrid="selectFeatureGrid" dataset="dsSelectFeature"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Modal -->

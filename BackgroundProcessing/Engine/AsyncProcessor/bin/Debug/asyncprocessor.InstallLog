@@ -1,0 +1,26 @@
+﻿Installing assembly 'C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.InstallLog
+   assemblypath = C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.exe
+Installing service AsyncProcessor...
+Service AsyncProcessor has been successfully installed.
+Creating EventLog source AsyncProcessor in log Application...
+Committing assembly 'C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.InstallLog
+   assemblypath = C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.exe
+Installing assembly 'C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.InstallLog
+   assemblypath = C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.exe
+Installing service AsyncProcessor...
+Service AsyncProcessor has been successfully installed.
+Creating EventLog source AsyncProcessor in log Application...
+Committing assembly 'C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.InstallLog
+   assemblypath = C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\AsyncProcessor\bin\Debug\asyncprocessor.exe

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="https://api.paycomonline.net" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="https://api.paycomonline.net" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="https://api.paycomonline.net/Imports">
+      <xsd:import schemaLocation="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd0" namespace="https://api.paycomonline.net" />
+      <xsd:import schemaLocation="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PaycomAPI" />
+      <xsd:import schemaLocation="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://www.paycomonline.net/PaycomAPI/v1.1/PaycomAPI.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Paycom.GeneralLedger.Core.Model.Online" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPaycomAPI_api_login_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_login" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_loginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_logout" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_logoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_punchimport_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_punchimport" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_punchimport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_punchimportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_eedirectory_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_eedirectory" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_eedirectory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_eedirectoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_clientlabor_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_clientlabor" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_clientlabor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_clientlaborResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_clientearning_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_clientearning" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_clientearning_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_clientearningResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_employee_streamed_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_employee_streamed" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_employee_streamed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_employee_streamedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_employee_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_employee" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_employee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_employeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_employee_sensitive_streamed_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_employee_sensitive_streamed" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_employee_sensitive_streamed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_employee_sensitive_streamedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_employee_sensitive_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_employee_sensitive" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_employee_sensitive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_employee_sensitiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_eechanges_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_eechanges" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_eechanges_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_eechangesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_eechanges_sensitive_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_eechanges_sensitive" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_eechanges_sensitive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_eechanges_sensitiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_newhire_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_newhire" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_newhire_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_newhireResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_punchhistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_punchhistory" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_punchhistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_punchhistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_punchhistory_streamed_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_punchhistory_streamed" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_punchhistory_streamed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_punchhistory_streamedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_employee_tax_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_employee_tax" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_get_employee_tax_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_get_employee_taxResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_set_employee_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_set_employee" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_set_employee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_set_employeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_set_categorydetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_set_categorydetail" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_set_categorydetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_set_categorydetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_add_categorydetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_add_categorydetail" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_add_categorydetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_add_categorydetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_RunReportForDateRange_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_RunReportForDateRange" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_RunReportForDateRange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_RunReportForDateRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_RunReportForTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_RunReportForTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_RunReportForTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_RunReportForTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_GenerateReportForDateRange_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_GenerateReportForDateRange" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_GenerateReportForDateRange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_GenerateReportForDateRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_GenerateReportForTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_GenerateReportForTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_GenerateReportForTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_GenerateReportForTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_GetGLMaps_InputMessage">
+    <wsdl:part name="parameters" element="tns:api_GetGLMaps" />
+  </wsdl:message>
+  <wsdl:message name="IPaycomAPI_api_GetGLMaps_OutputMessage">
+    <wsdl:part name="parameters" element="tns:api_GetGLMapsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPaycomAPI">
+    <wsdl:operation name="api_login">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_login" message="tns:IPaycomAPI_api_login_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_loginResponse" message="tns:IPaycomAPI_api_login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_logout">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_logout" message="tns:IPaycomAPI_api_logout_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_logoutResponse" message="tns:IPaycomAPI_api_logout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_punchimport">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_punchimport" message="tns:IPaycomAPI_api_punchimport_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_punchimportResponse" message="tns:IPaycomAPI_api_punchimport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_eedirectory">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_eedirectory" message="tns:IPaycomAPI_api_eedirectory_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_eedirectoryResponse" message="tns:IPaycomAPI_api_eedirectory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_clientlabor">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_clientlabor" message="tns:IPaycomAPI_api_clientlabor_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_clientlaborResponse" message="tns:IPaycomAPI_api_clientlabor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_clientearning">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_clientearning" message="tns:IPaycomAPI_api_clientearning_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_clientearningResponse" message="tns:IPaycomAPI_api_clientearning_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_get_employee_streamed">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_employee_streamed" message="tns:IPaycomAPI_api_get_employee_streamed_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_employee_streamedResponse" message="tns:IPaycomAPI_api_get_employee_streamed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_get_employee">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_employee" message="tns:IPaycomAPI_api_get_employee_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_employeeResponse" message="tns:IPaycomAPI_api_get_employee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_get_employee_sensitive_streamed">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_employee_sensitive_streamed" message="tns:IPaycomAPI_api_get_employee_sensitive_streamed_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_employee_sensitive_streamedResponse" message="tns:IPaycomAPI_api_get_employee_sensitive_streamed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_get_employee_sensitive">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_employee_sensitive" message="tns:IPaycomAPI_api_get_employee_sensitive_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_employee_sensitiveResponse" message="tns:IPaycomAPI_api_get_employee_sensitive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_get_eechanges">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_eechanges" message="tns:IPaycomAPI_api_get_eechanges_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_eechangesResponse" message="tns:IPaycomAPI_api_get_eechanges_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_get_eechanges_sensitive">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_eechanges_sensitive" message="tns:IPaycomAPI_api_get_eechanges_sensitive_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_eechanges_sensitiveResponse" message="tns:IPaycomAPI_api_get_eechanges_sensitive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_get_newhire">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_newhire" message="tns:IPaycomAPI_api_get_newhire_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_newhireResponse" message="tns:IPaycomAPI_api_get_newhire_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_get_punchhistory">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_punchhistory" message="tns:IPaycomAPI_api_get_punchhistory_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_punchhistoryResponse" message="tns:IPaycomAPI_api_get_punchhistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_get_punchhistory_streamed">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_punchhistory_streamed" message="tns:IPaycomAPI_api_get_punchhistory_streamed_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_punchhistory_streamedResponse" message="tns:IPaycomAPI_api_get_punchhistory_streamed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_get_employee_tax">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_employee_tax" message="tns:IPaycomAPI_api_get_employee_tax_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_get_employee_taxResponse" message="tns:IPaycomAPI_api_get_employee_tax_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_set_employee">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_set_employee" message="tns:IPaycomAPI_api_set_employee_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_set_employeeResponse" message="tns:IPaycomAPI_api_set_employee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_set_categorydetail">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_set_categorydetail" message="tns:IPaycomAPI_api_set_categorydetail_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_set_categorydetailResponse" message="tns:IPaycomAPI_api_set_categorydetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_add_categorydetail">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_add_categorydetail" message="tns:IPaycomAPI_api_add_categorydetail_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_add_categorydetailResponse" message="tns:IPaycomAPI_api_add_categorydetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_RunReportForDateRange">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_RunReportForDateRange" message="tns:IPaycomAPI_api_RunReportForDateRange_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_RunReportForDateRangeResponse" message="tns:IPaycomAPI_api_RunReportForDateRange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_RunReportForTransaction">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_RunReportForTransaction" message="tns:IPaycomAPI_api_RunReportForTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_RunReportForTransactionResponse" message="tns:IPaycomAPI_api_RunReportForTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_GenerateReportForDateRange">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_GenerateReportForDateRange" message="tns:IPaycomAPI_api_GenerateReportForDateRange_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_GenerateReportForDateRangeResponse" message="tns:IPaycomAPI_api_GenerateReportForDateRange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_GenerateReportForTransaction">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_GenerateReportForTransaction" message="tns:IPaycomAPI_api_GenerateReportForTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_GenerateReportForTransactionResponse" message="tns:IPaycomAPI_api_GenerateReportForTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="api_GetGLMaps">
+      <wsdl:input wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_GetGLMaps" message="tns:IPaycomAPI_api_GetGLMaps_InputMessage" />
+      <wsdl:output wsaw:Action="https://api.paycomonline.net/IPaycomAPI/api_GetGLMapsResponse" message="tns:IPaycomAPI_api_GetGLMaps_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

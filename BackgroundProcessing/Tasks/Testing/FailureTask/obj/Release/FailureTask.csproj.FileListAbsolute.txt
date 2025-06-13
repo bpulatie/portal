@@ -1,0 +1,14 @@
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Release\FailureTask.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Release\FailureTask.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Release\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Release\itextsharp.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Release\Newtonsoft.Json.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Release\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Release\itextsharp.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Release\Newtonsoft.Json.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Release\Newtonsoft.Json.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Release\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Release\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\obj\Release\FailureTask.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\obj\Release\FailureTask.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\obj\Release\FailureTask.csprojResolveAssemblyReference.cache

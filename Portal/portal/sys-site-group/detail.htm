@@ -1,0 +1,48 @@
+﻿    <div spaDataset="dsDetail"></div>    
+    <div spaDataset="dsBrowseSites"></div>
+    <div spaDataset="dsSelectSite"></div>
+
+    <div spaHeader="Site Group Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+    
+    <div spaPanel="SiteGroupPanel" title="Site Group">
+        <div spaTabPanel>
+
+            <div spaTab="group" label="Site Group">
+                <div spaInput="site_group_code" dataset="dsDetail" column="site_group_code" label="Site Group Code" ></div>
+                <div spaInput="name" dataset="dsDetail" column="name" label="Site Group Name" ></div>
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            </div>                            
+
+            <div spaTab="sites" label="Sites">
+                <div spaGrid="siteGrid" dataset="dsBrowseSites"></div>
+            </div>                            
+
+        </div>
+    </div>
+
+    <div spaFooter></div> 
+
+    <!-- Start Modal -->
+
+    <div spaModal="siteModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Select Site</h4>
+                </div>
+                <div class="modal-body">
+                    <div spaGrid="selectSiteGrid" dataset="dsSelectSite"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Modal -->
+

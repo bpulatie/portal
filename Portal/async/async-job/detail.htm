@@ -1,0 +1,67 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsBrowseTasks"></div>
+    <div spaDataset="dsSelectTask"></div>
+    <div spaDataset="dsJobParameters"></div>
+      
+    <div spaHeader="Async Job Detail">
+        <span spaClass="btn-sm btn-info" spaButton="runBtn">Queue Job Now</span>
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spapanel="jobPanel" title="Async Job Detail">
+
+        <div spaTabPanel>
+
+            <div spaTab="job" label="Job">
+                <div spaInput="job_name" dataset="dsDetail" column="job_name" label="Async Job Name" ></div>
+                <div spaSelect="schedule_code" dataset="dsDetail" column="schedule_code" label="Schedule" ></div>
+                <div spaTime="schedule_time" dataset="dsDetail" column="schedule_time" label="Schedule Start Time" ></div>
+                <div spaInput="schedule_freqency" dataset="dsDetail" column="schedule_frequency" label="Schedule Frequency" ></div>
+                <div spaCheck="active_flag" dataset="dsDetail" column="active_flag" label="Active" ></div>
+                <div spaText="context" dataset="dsDetail" column="job_context" label="Context"></div>
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            </div>
+
+            <div spaTab="tasks" label="Tasks">
+                <div spaGrid="taskGrid" dataset="dsBrowseTasks"></div>
+            </div>   
+
+            <div spaTab="parameters" label="Parameters">
+                <div spaGrid="paramGrid" dataset="dsJobParameters"></div>
+            </div>   
+
+        </div>
+    </div>
+
+    <div spaFooter></div>
+
+    <!-- Start Modal -->
+
+    <div spaModal="taskModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Select Async Task</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="panel-body">
+                        <form class="form-horizontal" role="form">
+                            <div spaInput="sort_order" dataFormat="numeric" label="Sort Order" ></div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <div spaGrid="selectTaskGrid" dataset="dsSelectTask"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Modal -->

@@ -1,0 +1,19 @@
+﻿    <div spaDataset="dsDetail"></div>
+    
+    <div spaHeader="System Option Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spaPanel="optionPanel" title="System Option Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+
+                <div spaInput="name" dataset="dsDetail" column="option_name" label="Option Name" ></div>
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            
+            </form>
+        </div>
+    </div>
+
+    <div spaFooter></div>

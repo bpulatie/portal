@@ -1,0 +1,66 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsBrowseFeatures"></div>
+    <div spaDataset="dsSelectFeature"></div>
+    <div spaDataset="dsBrowseUsers"></div>
+    <div spaDataset="dsBrowseNotes"></div>
+    <div spaDataset="dsApplication"></div>
+        
+    <div spaHeader="Client Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spaPanel="clientPanel" title="Client Detail">
+        <div spaTabPanel>
+
+            <div spaTab="role" label="Client">
+                <div spaInput="name" dataset="dsDetail" column="name" label="Client Name" ></div>
+                <div spaInput="contact_name" dataset="dsDetail" column="contact_name" label="Contact Name" ></div>
+                <div spaInput="contact_email" dataset="dsDetail" column="contact_email" label="Contact Email" ></div>
+                <div spaInput="contact_phone" dataset="dsDetail" column="contact_phone" label="Contact Phone" ></div>
+                <div spaSelect="status_code" dataset="dsDetail" column="status_code" label="Status" ></div>
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            </div>
+
+            <div spaTab="notes" label="Notes">
+                <div spaGrid="noteGrid" dataset="dsBrowseNotes"></div>
+            </div>   
+
+            <div spaTab="users" label="Users">
+                <div spaGrid="userGrid" dataset="dsBrowseUsers"></div>
+            </div>   
+
+            <div spaTab="features" label="Features">
+                <div spaGrid="featureGrid" dataset="dsBrowseFeatures"></div>
+            </div>   
+            
+            <div spaTab="settings" label="Settings">
+                <div spaInput="client_root" dataset="dsDetail" column="client_root" label="Root Folder" ></div>
+                <div spaInput="category_levels" dataset="dsDetail" column="category_levels" label="Item Category Levels" ></div>
+            </div>   
+            
+        </div>
+    </div>
+
+    <div spaFooter></div>
+
+    <div spaModal="featureModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Assign Features</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div spaGrid="selectFeatureGrid" dataset="dsSelectFeature"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Modal -->

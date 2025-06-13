@@ -1,0 +1,25 @@
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\ADPEmployeeImport.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\ADPEmployeeImport.pdb
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\ADPClient.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\log4net.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\ADPClient.pdb
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\obj\Debug\ADPEmployeeImport.csprojResolveAssemblyReference.cache
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\obj\Debug\ADPEmployeeImport.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\obj\Debug\ADPEmployeeImport.pdb
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\obj\Debug\ADPEmployeeImport.csprojResolveAssemblyReference.cache
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\obj\Debug\ADPEmployeeImport.dll
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\obj\Debug\ADPEmployeeImport.pdb
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\ADPEmployeeImport.dll.config
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\ADPEmployeeImport.dll
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\ADPEmployeeImport.pdb
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\ADPClient.dll
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\log4net.dll
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\System.Net.Http.dll
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\System.Net.Http.WebRequest.dll
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\ADPClient.pdb
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\System.Net.Http.xml
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\System.Net.Http.WebRequest.xml
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\Newtonsoft.Json.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPEmployeeImport\bin\Debug\Newtonsoft.Json.xml
+C:\RDM\BackgroundProcessing\Tasks\ADP\ADPEmployeeImport\obj\Debug\ADPEmployeeImport.csprojResolveAssemblyReference.cache

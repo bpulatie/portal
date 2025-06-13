@@ -1,0 +1,88 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsPay"></div>
+    <div spaDataset="dsPaySummary"></div>
+    <div spaDataset="dsBrowse"></div>
+    <div spaDataset="dsSummary"></div>
+    <div spaDataset="dsException"></div>
+    <div spaDataset="dsReasons"></div>
+    <div spaDataset="dsGroups"></div>
+    <div spaDataset="dsEarningCodes"></div>
+
+    <div spaHeader="Pay Period Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="importBtn">Validation Import</span>
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Create Pay File</span>
+        <span spaClass="btn-sm btn-success" accessFeature="AllowReprocessPayFile" spaButton="reprocessBtn">Reprocess Pay File</span>
+    </div> 
+    
+    <div spaPanel="topPanel" title="Manage Pay Detail">
+
+        <div spaTabPanel>
+
+            <div spaTab="pay" label="Pay Period">
+                <div spaInput="week_no" dataset="dsDetail" readonly column="week_no" label="Week No" ></div>
+                <div spaDate="start_date" dataset="dsDetail" readonly column="start_date" label="Start Date"></div>
+                <div spaDate="end_date" dataset="dsDetail" readonly column="end_date" label="End Date"></div>
+                <div spaSelect="specialist_id" label="Pay Specialist"></div>
+                <div spaSelect="pay_group_code" label="Pay Group"></div>
+            </div>   
+                                             
+            <div spaTab="paysummary" label="Pay Summary">
+                <div spaGrid="summaryGrid" dataset="dsPaySummary"></div>
+                <span spaClass="btn-sm btn-primary" spaButton="printBtn">Pay Summary Report</span>
+            </div> 
+
+            <div spaTab="summary" label="Pay Summary Detail">
+                <div spaTreeGrid="summaryTreeGrid" dataset="dsSummary"></div>
+            </div> 
+
+            <div spaTab="employee" label="Employee Pay">
+                <div spaGrid="myGrid" dataset="dsBrowse"></div>
+            </div> 
+
+            <div spaTab="exceptions" label="Pay Exceptions">
+                <div spaGrid="myExGrid" dataset="dsExBrowse"></div>
+                <span spaClass="btn-sm btn-primary" spaButton="printExceptionBtn">Pay Exception Report</span>
+            </div> 
+                
+        </div>
+
+    </div>
+
+    <div spaFooter></div> 
+
+    <!-- Start Modal -->
+
+    <div spaModal="exceptionModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Clear Exception</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="panel-body">
+                        <form class="form-horizontal" role="form">
+                            <div spaInput="last_name" readonly="readonly" dataset="dsException" column="last_name" label="Last Name" ></div>
+                            <div spaInput="first_name" readonly="readonly" dataset="dsException" column="first_name" label="First Name" ></div>
+                            <div spaInput="exception_type" readonly="readonly" dataset="dsException" column="exception_code_name" label="Exception" ></div>
+                            <div spaSelect="reason_code" dataset="dsException" column="reason_id" label="Reason"></div>
+                            <div spaText="reason" dataset="dsException" column="comment" label="Comment" ></div>
+                            <div spaSelect="status_code" dataset="dsException" column="status_code" label="Status"></div>
+                        </form>
+                    </div>
+
+                    <div spaModalStatusLine class='well text-danger'>&nbsp;</div>
+
+                </div>
+                <div class="modal-footer">
+                    <span spaClass="btn-sm btn-primary" spaButton="modalSaveBtn">Save</span>
+                    <span spaClass="btn-sm" spaButton="modalSaveAllBtn">Save All</span>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Modal -->
+

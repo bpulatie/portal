@@ -1,0 +1,14 @@
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\bin\Debug\FTPFileRetrieval.dll
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\bin\Debug\FTPFileRetrieval.pdb
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\bin\Debug\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\bin\Debug\Newtonsoft.Json.dll
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\bin\Debug\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\bin\Debug\AsyncLibrary.pdb
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\bin\Debug\Newtonsoft.Json.pdb
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\bin\Debug\Newtonsoft.Json.xml
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\bin\Debug\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\bin\Debug\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\obj\Debug\FTPFileRetrieval.csprojResolveAssemblyReference.cache
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\obj\Debug\FTPFileRetrieval.dll
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\obj\Debug\FTPFileRetrieval.pdb
+C:\RDM\BackgroundProcessing\Tasks\FTPFileRetrieval\FTPFileRetrieval\bin\Debug\ChilkatDotNet4.dll

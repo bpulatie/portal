@@ -1,0 +1,18 @@
+﻿    <div spaDataset="dsDetail"></div>
+    
+    <div spaHeader="Queue Detail">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spaPanel="queuePanel" title="Queue Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div spaInput="queue_name" dataset="dsDetail" column="queue_name" label="Queue Name" ></div>
+                <div spaInput="thread_count" dataset="dsDetail" column="thread_count" label="Thread Count" dataType="numeric"></div>
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            </form>
+        </div>
+    </div>
+
+    <div spaFooter></div>

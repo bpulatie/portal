@@ -1,0 +1,38 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsLookup"></div>
+
+    <div spaHeader="Site Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+    
+    <!-- Content goes here -->
+    <div spaPanel="sitePanel" title="Site Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+
+                 <div class="row">
+                    <div class="col-md-6">
+
+                        <div spaInput="site_code" dataset="dsDetail" column="site_code" label="Site Code" ></div>
+                        <div spaInput="name" dataset="dsDetail" column="name" label="Name" ></div>
+                        <div spaSelect="payroll_status" dataset="dsDetail" column="payroll_status" label="Payroll Status" ></div>
+                        <div spaAuto="state" dataset="dsDetail" column="state" label="State" ></div>
+                        <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+                    </div>
+                                
+                    <div class="col-md-6">
+                        <div spaInput="source_site" dataset="dsDetail" column="source_site" label="Source Site" ></div>
+                        <div spaInput="target_site" dataset="dsDetail" column="target_site" label="Target Site" ></div>
+                        <div spaDate="go_live" dataset="dsDetail" column="go_live" label="Go Live" ></div>
+                        <div spaSelect="site_status" dataset="dsDetail" column="site_status" label="Site Status" ></div>
+                        <div spaSelect="site_type" dataset="dsDetail" column="site_type" label="Site Type" ></div>
+                        <div spaSelect="org_id" dataset="dsDetail" column="org_id" label="Org ID" ></div>
+                    </div>
+                </div>
+            
+            </form>            
+        </div>
+    </div>
+
+    <div spaFooter></div> 

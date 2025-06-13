@@ -1,0 +1,26 @@
+﻿    <div spaDataset="dsDetail"></div>    
+
+    <div spaHeader="User Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+    
+    <div spaPanel="userPanel" title="User Detail">
+        <div spaTabPanel>
+
+            <div spaTab="user" label="User">
+                <div spaInput="firstname" dataset="dsDetail" column="first_name" label="First Name" ></div>
+                <div spaInput="lastname" dataset="dsDetail" column="last_name" label="Last Name" ></div>
+                <div spaInput="login_name" dataset="dsDetail" column="login_name" label="Login Name" ></div>
+                <div spaInput="email" dataset="dsDetail" column="email" label="Email" ></div>
+                <div spaSelect="user_type" dataset="dsDetail" column="user_type" label="User Type" ></div>
+                <!--<div spaSelect="gender" dataset="dsDetail" column="gender" label="Gender" ></div>
+                <div spaDate="date_of_birth" dataset="dsDetail" column="date_of_birth" label="Date of Birth"></div>-->
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            </div>                            
+
+        </div>
+    </div>
+
+    <div spaFooter></div> 
+

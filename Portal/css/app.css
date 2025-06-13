@@ -1,0 +1,36 @@
+﻿body                        { /*background-color: #fff;*/}
+
+.space-bottom               { margin-bottom: 10px;  }
+
+ 
+.input-group-btn            { position: static;}
+
+.dropdown-menu              { width: 100%; max-height: 350px; overflow-x: auto;}
+
+.input-append .btn.dropdown-toggle { float: none;}
+
+.dashboard                  { height: 150px; }
+
+.dashboard-primary          {  background-color: #337ab7; }
+.dashboard-danger           {  background-color: #d9534f; }
+.dashboard-success          {  background-color: #5cb85c; }
+.dashboard-info             {  background-color: #5bc0de; }
+.dashboard-warning          {  background-color: #f0ad4e; }
+
+#spa-open-modules           {  width:300px; }
+#spa-alerts                 {  width:300px; }
+.truncate                   {  white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;}
+
+
+.morris-hover{position:absolute;z-index:1000}.morris-hover.morris-default-style{border-radius:10px;padding:6px;color:#666;background:rgba(255,255,255,0.8);border:solid 2px rgba(230,230,230,0.8);font-family:sans-serif;font-size:12px;text-align:center}.morris-hover.morris-default-style .morris-hover-row-label{font-weight:bold;margin:0.25em 0}
+.morris-hover.morris-default-style .morris-hover-point{white-space:nowrap;margin:0.1em 0}
+
+.Requirement                        { display:inline;cursor:default;color:#000000;font-size: 14px;font-weight:normal;white-space:nowrap;padding:4px;}
+.Requirement a                      { color: #000000;text-decoration: none;white-space:nowrap;}
+.RequirementHighlight               { display: inline;cursor: pointer; color:#337ab7; font-size:14px;font-weight:bold;white-space:nowrap;padding:4px;}
+
+.leftpanel                          { position:absolute;top:120px;width:350px;bottom:0;overflow-x:auto;overflow-y:scroll;margin: 4px;border-top: 1px solid #cccccc}
+
+#ReqDetail                          { min-height: 300px; padding:10px; }
+
+.indent                             { margin-left: 9px; margin-right: 9px; }

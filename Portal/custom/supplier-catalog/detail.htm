@@ -1,0 +1,43 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsDepartment"></div>
+    
+    <div spaHeader="Supplier Item">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+    </div> 
+
+    <div spaPanel="topPanel" title="Supplier Item Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+
+                 <div class="row">
+                    <div class="col-md-6">
+                        <div spaInput="SupplierName" dataset="dsDetail" column="supplier_name" readOnly="y" label="Supplier Name" ></div>
+                        <div spaInput="SupplierCategory" dataset="dsDetail" column="supplier_category" readOnly="y" label="Supplier Category" ></div>
+                        <div spaInput="ProductDescription" dataset="dsDetail" column="product_description" label="Product Description" ></div>
+                        <div spaInput="SupplierItemCode" dataset="dsDetail" column="supplier_item_code" readOnly="y" label="Supplier Item Code" ></div>
+                        <div spaInput="SupplierIDFile" dataset="dsDetail" column="supplier_id_file" readOnly="y" label="Supplier ID File" ></div>
+                        <div spaInput="CostLevel" dataset="dsDetail" column="cost_level" readOnly="y" label="Cost Level" ></div>
+                        <div spaInput="Cost" dataset="dsDetail" column="cost" readOnly="y" label="Cost" ></div>
+                        <div spaInput="UOMType" dataset="dsDetail" column="uom_type" readOnly="y" label="UOM Type" ></div>
+                        <div spaInput="UOMCount" dataset="dsDetail" column="uom_count" readOnly="y" label="UOM Count" ></div>
+                    </div>
+                                
+                    <div class="col-md-6">
+                        <div spaInput="UPCPack" dataset="dsDetail" column="upc_pack" readOnly="y" label="UPC Pack" ></div>
+                        <div spaInput="UPCRetail" dataset="dsDetail" column="upc_retail" readOnly="y" label="Retail" ></div>
+                        <div spaInput="Status1" dataset="dsDetail" column="status1" readOnly="y" label="Status 1" ></div>
+                        <div spaInput="Status2" dataset="dsDetail" column="status2" readOnly="y" label="Status 2" ></div>
+                        <div spaInput="Action" dataset="dsDetail" column="action" readOnly="y" label="Action" ></div>
+                        <div spaDate="LastModified" dataset="dsDetail" column="last_modified" readOnly="y" label="Last Modified Date" ></div>
+                        <div spaDate="PendingDelete" dataset="dsDetail" column="pending_delete" readOnly="y" label="Pending Delete Date" ></div>
+                        <div spaInput="ExportedFlag" dataset="dsDetail" column="exported_flag" readOnly="y" label="Exported Flag" ></div>
+                        <div spaSelect="SupplierItemDepartmentID" dataset="dsDetail" column="supplier_item_department_id" label="Group" ></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div spaFooter></div>
+
+

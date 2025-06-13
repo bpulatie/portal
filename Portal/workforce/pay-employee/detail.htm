@@ -1,0 +1,53 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsBrowse"></div>
+    <div spaDataset="dsEmployeeHistory"></div>
+    <div spaDataset="dsEarningCodes"></div>
+
+    <div spaHeader="Employee Maintenance">
+        <span spaClass="btn-sm btn-success" mode='all' spaButton="queueBtn">Queue HR Bridge</span>
+        <span spaClass="btn-sm btn-success" mode='all' spaButton="triggerBtn">Trigger HR Bridge</span>
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+    
+    <div spaPanel="employeePanel" title="Employee Detail">
+        <div spaTabPanel>
+
+            <div spaTab="Employee" label="Employee">
+ 
+                 <div class="row">
+                    <div class="col-md-6">
+                        <div spaInput="employee_no" dataset="dsDetail" column="employee_no" label="Employee No" ></div>
+                        <div spaInput="firstname" dataset="dsDetail" column="first_name" label="First Name" ></div>
+                        <div spaInput="lastname" dataset="dsDetail" column="last_name" label="Last Name" ></div>
+                        <div spaInput="status" dataset="dsDetail" column="status_code_name" label="Status" ></div>
+                        <div spaDate="start_date" dataset="dsDetail" column="start_date" label="Start Date" ></div>
+                        <div spaDate="termination_date" dataset="dsDetail" column="termination_date" label="Termination Date" ></div>
+                        <div spaInput="national" dataset="dsDetail" column="national_code" label="National Code"></div>
+                        <div spaInput="site_code" dataset="dsDetail" column="site_code" label="Site Code" ></div>
+                    </div>
+                                
+                    <div class="col-md-6">
+                        <div spaInput="email" dataset="dsDetail" column="email" label="Email" ></div>
+                        <div spaInput="cellphone" dataset="dsDetail" column="cellphone" label="Cell Phone" ></div>
+                        <div spaInput="contact" dataset="dsDetail" column="contact" label="Contact" ></div>
+                        <div spaInput="relation" dataset="dsDetail" column="contact_relation" label="Contact Relationship" ></div>
+                        <div spaInput="contact_phone" dataset="dsDetail" column="contact_phone" label="Contact Phone" ></div>
+                        <div spaInput="rate_type" dataset="dsDetail" column="rate_type_name" label="Rate Type" ></div>
+                        <div spaInput="pay_rate" dataset="dsDetail" column="pay_rate" label="Pay Rate" accessFeature="AllowViewPayRates" dataFormat="numeric" dataType="money"></div>
+                    </div>
+                </div>
+            </div>   
+                                             
+            <div spaTab="EmployeeHistory" label="Employee History">
+                <div spaGrid="employeeHistoryGrid" dataset="dsEmployeeHistory"></div>
+            </div> 
+
+            <div spaTab="History" label="Pay History">
+                <div spaGrid="myGrid" dataset="dsBrowse"></div>
+            </div> 
+
+        </div>
+    </div>
+
+    <div spaFooter></div> 

@@ -1,0 +1,9 @@
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesItemTransImport\bin\Release\PetesSalesItemTransImport.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesItemTransImport\bin\Release\PetesSalesItemTransImport.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesItemTransImport\bin\Release\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesItemTransImport\bin\Release\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesItemTransImport\bin\Release\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesItemTransImport\bin\Release\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesItemTransImport\obj\Release\PetesSalesItemTransImport.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesItemTransImport\obj\Release\PetesSalesItemTransImport.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesItemTransImport\obj\Release\PetesSalesItemTransImport.csprojResolveAssemblyReference.cache

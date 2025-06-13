@@ -1,0 +1,34 @@
+﻿    <div spaDataset="dsDetail"></div>    
+    <div spaDataset="dsClients"></div>
+    <div spaDataset="dsClient"></div>
+
+    <div spaHeader="Note Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+    
+    <div spaPanel="notePanel" title="Note Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <div spaSelect="client_id" dataset="dsDetail" column="client_id" label="Client" ></div>
+                        <div spaInput="contact" readonly dataset="dsClient" column="contact_name" label="Contact" ></div>
+                        <div spaInput="email" readonly dataset="dsClient" column="contact_email" label="Email" ></div>
+                        <div spaInput="phone" readonly dataset="dsClient" column="contact_phone" label="Phone" ></div>
+                    </div>
+                                
+                    <div class="col-md-7">
+                        <div spaInput="summary" dataset="dsDetail" column="summary" label="Summary" ></div>
+                        <div spaDate="creation_date" dataset="dsDetail" column="creation_date" readonly label="Creation Date"></div>
+                        <div spaDate="follow_up_date" dataset="dsDetail" column="follow_up_date" label="Follow Up Date"></div>
+                        <div spaText="description" dataset="dsDetail" column="description" rows="10" label="Description" ></div>
+                   </div>
+                </div>
+            
+            </form>            
+        </div>
+    </div>
+
+    <div spaFooter></div> 

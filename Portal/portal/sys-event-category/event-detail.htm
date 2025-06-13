@@ -1,0 +1,20 @@
+﻿    <div spaDataset="dsDetail"></div>    
+
+    <div spaHeader="User Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+    
+    <div spaPanel="eventPanel" title="Event Detail">
+        <div spaTabPanel>
+
+            <div spaTab="user" label="Event Type">
+                <div spaInput="event_name" dataset="dsDetail" column="event_name" label="Event Name" ></div>
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            </div>                            
+
+        </div>
+    </div>
+
+    <div spaFooter></div> 
+

@@ -1,0 +1,39 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsLookup"></div>
+
+    <div spaHeader="Job Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <!--<span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>-->
+    </div> 
+    
+    <!-- Content goes here -->
+    <div spaPanel="jobPanel" title="Job Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div spaInput="job_code" dataset="dsDetail" column="job_code" label="Job Code" ></div>
+                        <div spaCheck="active_flag" dataset="dsDetail" column="active_flag" label="Active" ></div>
+                        <div spaSelect="company" dataset="dsDetail" column="company" label="Company" ></div>
+                        <div spaInput="name" dataset="dsDetail" column="name" label="Name" ></div>
+                        <div spaInput="external_code" dataset="dsDetail" column="external_code" label="External Code" ></div>
+                        <div spaSelect="access_level" dataset="dsDetail" column="access_level" label="Access Level" ></div>
+                        <div spaSelect="security_level" dataset="dsDetail" column="security_level" label="Security Level" ></div>
+                    </div>
+                                
+                    <div class="col-md-6">
+                        <div spaCheck="mag_only" dataset="dsDetail" column="mag_only" label="Mag Only" ></div>
+                        <div spaCheck="mask_pay" dataset="dsDetail" column="mask_pay" label="Mask Pay" ></div>
+                        <div spaCheck="include_in_mgr_group" dataset="dsDetail" column="include_in_mgr_group" label="Include Mgr Group" ></div>
+                        <div spaSelect="tip_status" dataset="dsDetail" column="tip_status_code" label="Tip Status" ></div>
+                        <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+                    </div>
+                </div>
+            
+            </form>            
+        </div>
+    </div>
+
+    <div spaFooter></div> 

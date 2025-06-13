@@ -1,0 +1,12 @@
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\bin\Release\EmailEventAlert.dll
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\bin\Release\EmailEventAlert.pdb
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\bin\Release\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\bin\Release\Newtonsoft.Json.dll
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\bin\Release\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\bin\Release\Newtonsoft.Json.pdb
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\bin\Release\Newtonsoft.Json.xml
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\bin\Release\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\bin\Release\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\obj\Release\EmailEventAlert.dll
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\obj\Release\EmailEventAlert.pdb
+C:\RDM\BackgroundProcessing\Tasks\EmailEventAlert\EmailEventAlert\obj\Release\EmailEventAlert.csprojResolveAssemblyReference.cache

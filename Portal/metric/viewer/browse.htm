@@ -1,0 +1,23 @@
+﻿    <div spaDataset="dsBrowse"></div>
+    <div spaDataset="dsMetric"></div>
+    <div spaDataset="dsHeader"></div>
+    
+    <div spaHeader="Metric Viewer">
+    </div> 
+    
+    <div spaPanel="topPanel" title="Metric Viewer">
+
+        <div spaTabPanel>
+
+            <div spaTab="metric" label="Select Metric">
+                <div spaSelect="metric_id" label="Metric"></div>
+            </div>   
+                                             
+            <div spaTab="data" label="Metric Data">
+                <div spaGrid="myGrid" dataset="dsBrowse"></div>
+            </div> 
+
+        </div>
+    </div>    
+    
+    <div spaFooter></div> 

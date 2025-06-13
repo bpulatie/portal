@@ -1,0 +1,78 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsBrowseMenus"></div>
+    <div spaDataset="dsSelectMenu"></div>
+    <div spaDataset="dsBrowseAccess"></div>
+    <div spaDataset="dsSelectAccess"></div>
+
+    <div spaHeader="Role Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+    
+    <div spaPanel="rolePanel" title="Role Detail">
+        <div spaTabPanel>
+
+            <div spaTab="role" label="Role">
+                <div spaInput="name" dataset="dsDetail" column="role_name" label="Role Name" ></div>
+                <div spaInput="external" dataset="dsDetail" column="external_name" label="External Name" ></div>
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            </div>
+
+            <div spaTab="menus" label="Menus">
+                <div spaGrid="menuGrid" dataset="dsBrowseMenus"></div>
+            </div>   
+
+            <div spaTab="access" label="Access Features">
+                <div spaGrid="accessGrid" dataset="dsBrowseAccess"></div>
+            </div>   
+        </div>
+    </div>
+
+    <div spaFooter></div> 
+
+    <!-- Start Modal -->
+
+    <div spaModal="menuModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Select Menu</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="panel-body">
+                        <div spaGrid="selectMenuGrid" dataset="dsSelectMenu"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Modal -->
+
+    <!-- Start Modal -->
+
+    <div spaModal="accessModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Assign Feature</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div spaGrid="selectAccessGrid" dataset="dsSelectAccess"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Modal -->

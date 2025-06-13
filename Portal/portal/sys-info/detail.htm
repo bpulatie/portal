@@ -1,0 +1,169 @@
+﻿    <div spaHeader="Document Repository"></div> 
+
+        <div class="leftpanel">
+            <div id="Treeview"></div>
+        </div>
+
+
+        <div id="page-wrapper">
+            <div id="spa-body" class="container-fluid">
+		        <input id="ReqID" style="DISPLAY: none"/> 
+		        <input id="ReqCount" style="DISPLAY: none"/>
+
+		        <!-- -->
+                <br />
+                
+                <ul class='nav nav-tabs' role='tablist'>
+                    <li id='requirements_tab' role='presentation' class='active'>
+                        <a href='#tab_requirements_tab' aria-controls='tab_requirements_tab' role='tab' data-toggle='tab'>Requirements</a>
+                    </li>
+                    <li id='attachments_tab' role='presentation'>
+                        <a href='#tab_attachments_tab' aria-controls='tab_attachments_tab' role='tab' data-toggle='tab'>Attachments</a>
+                    </li>
+                </ul>
+                
+                <div class='panel-body'>
+                    <div class="tab-content">
+                        <div role='tabpanel' class='tab-pane active' id='tab_requirements_tab'>                            
+                            <form class='form-horizontal' role='form'>
+                            
+                                <div class="form-group">
+                                    <label for='ReqName' class='col-sm-3 control-label'>Requirement Name</label>
+                                    <div class='col-sm-9'><input id='ReqName' class='form-control spaInput' readonly type='text' placeholder='Requirement Name'/></div>
+                                </div>
+   
+                                <div class="form-group">
+                                    <label for='ReqRef' class='col-sm-3 control-label'>Reference No</label>
+                                    <div class='col-sm-9'><input id='ReqRef' class='form-control spaInput' readonly type='text' placeholder='Reference No'/></div>
+                                </div>
+   
+                                <div class="form-group">
+                                    <label for='ReqOrder' class='col-sm-3 control-label'>Order</label>
+                                    <div class='col-sm-9'><input id='ReqOrder' class='form-control spaInput' readonly type='text' placeholder='Order'/></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for='Keywords' class='col-sm-3 control-label'>Labels</label>
+                                    <div class='col-sm-9'><input id='Keywords' class='form-control spaInput' readonly type='text' placeholder='Labels'/></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for='ReqDetail' class='col-sm-3 control-label'>Description</label>
+                                    <div class='col-sm-9'><div id='ReqDetail' class='panel panel-default'></div></div>
+                                </div>
+
+                                <div class="col-sm-3">&nbsp;</div>
+                                <div class="col-sm-9">
+                                    <button id="New_btn" type="button" class="btn-sm btn-default"><i class="fa fa-plus"></i> Add New</button>
+                                    <button id="Edit" type="button" class="btn-sm btn-default"><i class="fa fa-edit"></i> Edit</button>
+                                    <button id="Delete" type="button" class="btn-sm btn-default"><i class="fa fa-minus"></i> Delete</button>
+                                    <button id="Print" type="button" class="btn-sm btn-default"><i class="fa fa-print"></i> Print</button>
+                                </div>
+                            </form>
+                        </div>
+ 
+                        <div role='tabpanel' class='tab-pane' id='tab_attachments_tab'>                            
+                          <input id="input-ke-2" name="inputKE2[]" type="file" class="file" multiple data-show-upload="true" data-show-caption="true">
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.container -->
+        </div>
+    </div>
+
+    <!-- Requirement Modal -->
+    <div id="RequirementModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 id="RequirementModal_Title" class="modal-title">Requirement</h4>
+                </div>
+                <div class="modal-body">
+                    <form class='form-horizontal' role='form'>
+                        <div class="form-group">
+                            <label for='ReqName1' class='col-sm-3 control-label'>Requirement Name</label>
+                            <div class='col-sm-9'><input id='ReqName1' class='form-control spaInput' type='text' placeholder='Requirement Name'/></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for='ReqRef1' class='col-sm-3 control-label'>Reference No</label>
+                            <div class='col-sm-9'><input id='ReqRef1' class='form-control spaInput' type='text' placeholder='Reference No'/></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for='ReqOrder1' class='col-sm-3 control-label'>Order</label>
+                            <div class='col-sm-9'><input id='ReqOrder1' class='form-control spaInput' type='text' placeholder='Order'/></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for='Keywords1' class='col-sm-3 control-label'>Labels</label>
+                            <div class='col-sm-9'><input id='Keywords1' class='form-control spaInput' type='text' placeholder='Labels'/></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class='col-sm-6 control-label'>Description</label>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12"><div id='ReqDetail1'></div></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button id="SaveBtn" type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- System Message -->
+    <div id="spa_system_modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 id="spa_system_modal_title" class="modal-title">System Message</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="spa_system_modal_message"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm Modal -->
+    <div id="spa_confirmation_modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 id="spa_confirmation_modal_title" class="modal-title">Confirmation</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="spa_confirmation_modal_message"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button id="spa_confirmation_modal_ok" type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="context-menu">
+        <ul class="dropdown-menu" role="menu">
+            <li><a tabindex="-1" href="#"><i class="fa fa-plus" aria-hidden="true"></i> Add</a></li>
+            <li><a tabindex="-1" href="#"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>
+            <li><a tabindex="-1" href="#"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a tabindex="-1" href="#"><i class="fa fa-print" aria-hidden="true"></i> Print</a></li>
+        </ul>
+    </div>
+
+    <div spaFooter></div>

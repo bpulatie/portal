@@ -1,0 +1,21 @@
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\FailureTask\bin\Debug\FailureTask.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\FailureTask\bin\Debug\FailureTask.pdb
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\FailureTask\bin\Debug\log4net.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\FailureTask\obj\Debug\FailureTask.csprojResolveAssemblyReference.cache
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\FailureTask\obj\Debug\FailureTask.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\FailureTask\obj\Debug\FailureTask.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\FailureTask.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\FailureTask.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\itextsharp.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\Newtonsoft.Json.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\AsyncLibrary.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\itextsharp.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\Newtonsoft.Json.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\Newtonsoft.Json.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\bin\Debug\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\obj\Debug\FailureTask.csprojResolveAssemblyReference.cache
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\obj\Debug\FailureTask.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\FailureTask\obj\Debug\FailureTask.pdb

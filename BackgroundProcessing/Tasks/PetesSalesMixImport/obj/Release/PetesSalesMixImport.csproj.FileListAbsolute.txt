@@ -1,0 +1,9 @@
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesMixImport\bin\Release\PetesSalesMixImport.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesMixImport\bin\Release\PetesSalesMixImport.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesMixImport\bin\Release\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesMixImport\bin\Release\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesMixImport\bin\Release\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesMixImport\bin\Release\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesMixImport\obj\Release\PetesSalesMixImport.dll
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesMixImport\obj\Release\PetesSalesMixImport.pdb
+C:\RDM\BackgroundProcessing\Tasks\PetesSalesMixImport\obj\Release\PetesSalesMixImport.csprojResolveAssemblyReference.cache

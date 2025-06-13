@@ -1,0 +1,46 @@
+﻿    <div spaDataset="dsBrowseEvents"></div>
+
+    <div spaHeader="Testing">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+    </div> 
+
+    <div spaPanel="userPanel" title="Testing">
+        <div spaTabPanel>
+            
+            <div spaTab="test1" label="Controls">
+                <div spaAuto="state" label="State" ></div>
+            </div>
+
+            <div spaTab="subs" label="Grid">
+                <div spaGrid="eventGrid" dataset="dsBrowseEvents"></div>
+            </div>   
+
+        </div>
+    </div>
+
+    <div spaFooter></div>
+
+
+    <!-- Start Modal -->
+
+    <div spaModal="eventModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Subscribe to Event</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div>
+                        <div spaGrid="selectEventGrid" dataset="dsSelectEvent"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Modal -->

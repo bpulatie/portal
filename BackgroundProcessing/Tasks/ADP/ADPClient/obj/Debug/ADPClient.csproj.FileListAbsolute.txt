@@ -1,0 +1,26 @@
+C:\Users\steve\Documents\Visual Studio 2010\Projects\ADPClient\ADPClient\bin\Debug\ADPClient.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\ADPClient\ADPClient\bin\Debug\ADPClient.pdb
+C:\Users\steve\Documents\Visual Studio 2010\Projects\ADPClient\ADPClient\bin\Debug\System.Net.Http.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\ADPClient\ADPClient\bin\Debug\System.Net.Http.WebRequest.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\ADPClient\ADPClient\bin\Debug\System.Net.Http.xml
+C:\Users\steve\Documents\Visual Studio 2010\Projects\ADPClient\ADPClient\bin\Debug\System.Net.Http.WebRequest.xml
+C:\Users\steve\Documents\Visual Studio 2010\Projects\ADPClient\ADPClient\obj\Debug\ADPClient.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\ADPClient\ADPClient\obj\Debug\ADPClient.pdb
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\bin\Debug\ADPClient.dll
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\bin\Debug\ADPClient.pdb
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\bin\Debug\System.Net.Http.dll
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\bin\Debug\System.Net.Http.WebRequest.dll
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\bin\Debug\System.Net.Http.xml
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\bin\Debug\System.Net.Http.WebRequest.xml
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\obj\Debug\ADPClient.csprojResolveAssemblyReference.cache
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\obj\Debug\ADPClient.dll
+C:\Users\J1014338\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\obj\Debug\ADPClient.pdb
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\bin\Debug\ADPClient.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\bin\Debug\ADPClient.pdb
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\obj\Debug\ADPClient.csprojResolveAssemblyReference.cache
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\obj\Debug\ADPClient.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\AsyncProcessor\ADPClient\obj\Debug\ADPClient.pdb
+C:\RDM\BackgroundProcessing\Tasks\ADP\ADPClient\bin\Debug\ADPClient.dll
+C:\RDM\BackgroundProcessing\Tasks\ADP\ADPClient\bin\Debug\ADPClient.pdb
+C:\RDM\BackgroundProcessing\Tasks\ADP\ADPClient\obj\Debug\ADPClient.dll
+C:\RDM\BackgroundProcessing\Tasks\ADP\ADPClient\obj\Debug\ADPClient.pdb

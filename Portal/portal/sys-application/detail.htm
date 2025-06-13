@@ -1,0 +1,24 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsBrowseFeatures"></div>
+    <div spaDataset="dsSelectFeature"></div>
+        
+    <div spaHeader="Application Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spaPanel="applicationPanel" title="Application Detail">
+        <div spaTabPanel>
+
+            <div spaTab="application" label="Application">
+                <div spaInput="name" dataset="dsDetail" column="application_name" label="Application Name" ></div>
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            </div>
+
+            <div spaTab="features" label="Features">
+                <div spaGrid="featureGrid" dataset="dsBrowseFeatures"></div>
+            </div>   
+        </div>
+    </div>
+
+    <div spaFooter></div>

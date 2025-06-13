@@ -1,0 +1,21 @@
+C:\Users\steve\Documents\Visual Studio 2010\Projects\SuccessTask\SuccessTask\obj\Debug\SuccessTask.csprojResolveAssemblyReference.cache
+C:\Users\steve\Documents\Visual Studio 2010\Projects\SuccessTask\SuccessTask\bin\Debug\SuccessTask.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\SuccessTask\SuccessTask\bin\Debug\SuccessTask.pdb
+C:\Users\steve\Documents\Visual Studio 2010\Projects\SuccessTask\SuccessTask\bin\Debug\log4net.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\SuccessTask\SuccessTask\obj\Debug\SuccessTask.dll
+C:\Users\steve\Documents\Visual Studio 2010\Projects\SuccessTask\SuccessTask\obj\Debug\SuccessTask.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\SuccessTask.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\SuccessTask.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\itextsharp.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\Newtonsoft.Json.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\AsyncLibrary.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\itextsharp.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\Newtonsoft.Json.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\Newtonsoft.Json.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\bin\Debug\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\obj\Debug\SuccessTask.csprojResolveAssemblyReference.cache
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\obj\Debug\SuccessTask.dll
+C:\RDM\BackgroundProcessing\Tasks\Testing\SuccessTask\obj\Debug\SuccessTask.pdb

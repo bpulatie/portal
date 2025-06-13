@@ -1,0 +1,15 @@
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\itextsharp.dll
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\Newtonsoft.Json.dll
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\itextsharp.xml
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\Newtonsoft.Json.pdb
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\Newtonsoft.Json.xml
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\obj\Debug\ExecuteStoredProcedure.csprojResolveAssemblyReference.cache
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\AsyncLibrary.pdb
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\ExecuteStoredProcedure.dll
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\bin\Debug\ExecuteStoredProcedure.pdb
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\obj\Debug\ExecuteStoredProcedure.dll
+C:\RDM\BackgroundProcessing\Tasks\ExecuteStoredProcedure\ExecuteStoredProcedure\obj\Debug\ExecuteStoredProcedure.pdb

@@ -1,0 +1,20 @@
+﻿    <div spaDataset="dsCategory"></div>
+    <div spaDataset="dsDetail"></div>
+    
+    <div spaHeader="System Reasons">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spaPanel="reasonPanel" title="Reason Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+
+                <div spaSelect="reason_category_id" dataset="dsDetail" column="reason_category_id" label="Reason Category" ></div>
+                <div spaInput="reason_code" dataset="dsDetail" column="reason_code" label="Reason Code" ></div>
+            
+            </form>
+        </div>
+    </div>
+
+    <div spaFooter></div>

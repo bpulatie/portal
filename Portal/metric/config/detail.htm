@@ -1,0 +1,33 @@
+﻿    <div spaDataset="dsDetail"></div>
+    
+    <div spaHeader="Metric">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spaPanel="metricPanel" title="Metric Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div spaInput="metric_name" dataset="dsDetail" column="metric_name" label="Name" ></div>
+                        <div spaInput="metric_detail" dataset="dsDetail" column="metric_detail" label="Title" ></div>
+                        <div spaText="description" dataset="dsDetail" column="description" label="Descripton" ></div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div spaInput="dimension_1_label" dataset="dsDetail" column="dimension_1_label" label="Dimension 1 Label" ></div>
+                        <div spaInput="dimension_2_label" dataset="dsDetail" column="dimension_2_label" label="Dimension 2 Label" ></div>
+                        <div spaInput="dimension_3_label" dataset="dsDetail" column="dimension_3_label" label="Dimension 3 Label" ></div>
+                        <div spaInput="value_1_label" dataset="dsDetail" column="value_1_label" label="Value 1 Label" ></div>
+                        <div spaInput="value_2_label" dataset="dsDetail" column="value_2_label" label="Value 2 Label" ></div>
+                        <div spaInput="value_3_label" dataset="dsDetail" column="value_3_label" label="Value 3 Label" ></div>
+                    </div>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+
+    <div spaFooter></div>

@@ -1,0 +1,99 @@
+﻿COMPLETED
+===================================================================================================
+2017-04-06			- Forgot password link
+					- Initial email with username password
+					- Temporay Password Email
+					- Change password when temporary
+
+2017-04-06			- Portal / Reason Codes 
+					- SysAdmin adds Categories Clients Add reson codes
+
+2017-04-11			- System Options - Create at System Admin Level assign Values at Client Admin Level
+
+2017-04-12			- Feature Groups are now Applications
+					- An Application has many features
+					- Client Admins now create menus
+					- A Menu has Menu Items that are features
+					- Menus are assigned to Roles
+
+2017-04-12			- Need to track form history in order to backup correctly when forms are closed - done
+
+2017-04-12			- Valid Values - The same???? -- No I think this would be wrong
+
+2017-04-19			- Added some PFC5 features
+					- Calling a stored procedure with configurable timeout
+					- More Access Features
+					- Updated PFC Reports
+					- Preset Filters on Grids
+
+2017-05-05			- Refresh Application Maintenace Feature Dataset after add feature 
+					- after add Menu and save storeing menu items with empty menu id
+
+2017-06-07			- Check for Duplicate Names
+						- Access Feature
+						- Application
+						- Client
+						- Event Category
+						- Event Type
+						- Feature
+						- Feature Group
+						- Options
+						- Reason Category
+						- User (login Name)
+						- Value Group
+
+					- Check for Duplicates By Client
+						- Menu
+						- Role
+						- Site
+						- Site Group
+						- Job
+						- Pay Group
+						- Employee
+						- Async Tables
+
+				- Deletes
+					- Check for Dependancies and/or 
+					- remove entries from list tables
+						- site_group_list
+						- user_site_list	
+						- async_job_task_list
+
+
+TODO
+===================================================================================================
+
+- Deletes
+	- Check for Dependancies and/or 
+	- remove entries from list tables
+		- client_feature_list
+		- role_access_list
+		- role_feature_list
+		- role_menu_list
+		- user_role_list
+		- value/value_group
+		- menu_item
+		- event_subscriptions
+		- option_values
+		- reason category
+
+
+Menu Items - allow edits rather than delete and re-add
+
+
+
+
+Database Changes 
+================
+
+
+Update Applications folder and features to Workforce
+------------------------------------------------------
+update sys_feature
+set moniker = REPLACE(moniker, 'applications', 'pay')
+where moniker like '%applications%'
+
+Add - client_id to pay_group
+------------------------------
+alter table pay_group
+add client_id uniqueidentifier

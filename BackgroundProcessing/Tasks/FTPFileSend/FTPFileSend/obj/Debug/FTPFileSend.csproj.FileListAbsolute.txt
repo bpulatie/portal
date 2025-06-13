@@ -1,0 +1,14 @@
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\bin\Debug\FTPFileSend.dll
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\bin\Debug\FTPFileSend.pdb
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\bin\Debug\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\bin\Debug\ChilkatDotNet4.dll
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\bin\Debug\Newtonsoft.Json.dll
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\bin\Debug\log4net.dll
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\bin\Debug\AsyncLibrary.pdb
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\bin\Debug\Newtonsoft.Json.pdb
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\bin\Debug\Newtonsoft.Json.xml
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\bin\Debug\log4net.pdb
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\bin\Debug\log4net.xml
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\obj\Debug\FTPFileSend.csprojResolveAssemblyReference.cache
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\obj\Debug\FTPFileSend.dll
+C:\RDM\BackgroundProcessing\Tasks\FTPFileSend\FTPFileSend\obj\Debug\FTPFileSend.pdb

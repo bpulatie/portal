@@ -1,0 +1,57 @@
+﻿    <div spaDataset="dsDetail"></div>
+    <div spaDataset="dsBrowseValues"></div>
+    <div spaDataset="dsDetailValue"></div>
+    
+    <div spaHeader="System Value Group Maintenance">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+
+    <div spaPanel="valuePanel" title="System Value Group Detail">
+        <div spaTabPanel>
+
+            <div spaTab="group" label="Value Group">
+                <div spaInput="name" dataset="dsDetail" column="group_name" label="Group Name" ></div>
+                <div spaText="description" dataset="dsDetail" column="description" label="Description" ></div>
+            </div>
+
+            <div spaTab="values" label="Valid Values">
+                <div spaGrid="valueGrid" dataset="dsBrowseValues"></div>
+            </div>   
+        </div>
+    </div>
+
+    <div spaFooter></div>
+
+    <!-- Start Modal -->
+
+    <div spaModal="valueModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Add Value</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="panel-body">
+                        <form class="form-horizontal" role="form">
+                            <div spaInput="modal_value_code" dataset="dsDetailValue" column="value_code" label="Code" ></div>
+                            <div spaInput="modal_value" dataset="dsDetailValue" column="value_text" label="Value" ></div>
+                            <div spaInput="modal_sort_order" dataset="dsDetailValue" column="sort_order" dataType="numeric" label="Sort Order" ></div>
+                            <div spaText="modal_description" dataset="dsDetailValue" column="description" label="Description" ></div>
+                        </form>
+                    </div>
+
+                    <div spaModalStatusLine class='well text-danger'>&nbsp;</div>
+
+                </div>
+                <div class="modal-footer">
+                    <span spaClass="btn-sm btn-primary" spaButton="modalSaveBtn">Save</span>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Modal -->

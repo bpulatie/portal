@@ -1,0 +1,8 @@
+C:\RDM\BackgroundProcessing\Engine\AsyncLibrary\AsyncLibrary\bin\Release\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Engine\AsyncLibrary\AsyncLibrary\bin\Release\AsyncLibrary.pdb
+C:\RDM\BackgroundProcessing\Engine\AsyncLibrary\AsyncLibrary\bin\Release\log4net.dll
+C:\RDM\BackgroundProcessing\Engine\AsyncLibrary\AsyncLibrary\bin\Release\log4net.pdb
+C:\RDM\BackgroundProcessing\Engine\AsyncLibrary\AsyncLibrary\bin\Release\log4net.xml
+C:\RDM\BackgroundProcessing\Engine\AsyncLibrary\AsyncLibrary\obj\Release\AsyncLibrary.dll
+C:\RDM\BackgroundProcessing\Engine\AsyncLibrary\AsyncLibrary\obj\Release\AsyncLibrary.pdb
+C:\RDM\BackgroundProcessing\Engine\AsyncLibrary\AsyncLibrary\obj\Release\AsyncLibrary.csprojResolveAssemblyReference.cache

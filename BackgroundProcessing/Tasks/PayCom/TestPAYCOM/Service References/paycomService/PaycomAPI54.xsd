@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Paycom.GeneralLedger.Core.Model.Online" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Paycom.GeneralLedger.Core.Model.Online" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfGlMap">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GlMap" nillable="true" type="tns:GlMap" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGlMap" nillable="true" type="tns:ArrayOfGlMap" />
+  <xs:complexType name="GlMap">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Engine" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExcludeManuals" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="SetupComplete" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GlMap" nillable="true" type="tns:GlMap" />
+</xs:schema>

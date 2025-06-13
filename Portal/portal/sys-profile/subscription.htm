@@ -1,0 +1,33 @@
+﻿    <div spaDataset="dsDetail"></div>    
+    <div spaDataset="dsCategory"></div>
+    <div spaDataset="dsType"></div>
+    <div spaDataset="dsName"></div>
+
+    <div spaHeader="Event Subscription">
+        <span spaClass="btn-sm btn-success" spaButton="saveBtn">Save</span>
+        <span spaClass="btn-sm btn-danger" spaButton="deleteBtn">Delete</span>
+    </div> 
+    
+    <div spaPanel="notePanel" title="Subscription Detail">
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <div spaSelect="event_category_id" dataset="dsDetail" column="event_category_id" label="Event Category" ></div>
+                        <div spaSelect="event_type_id" dataset="dsDetail" column="event_type_id" label="Event" ></div>
+                        <div spaText="description" readonly dataset="dsName" column="description" rows="10" label="Description" ></div>
+                    </div>
+                                
+                    <div class="col-md-7">
+                        <div spaInput="email" dataset="dsDetail" column="email" label="Email" ></div>
+                        <div spaSelect="notification_type" dataset="dsDetail" column="notification_type" label="Notification Type" ></div>
+                        <div spaTime="email_time" dataset="dsDetail" column="email_time" label="Email Time"></div>
+                   </div>
+                </div>
+            
+            </form>            
+        </div>
+    </div>
+
+    <div spaFooter></div> 
